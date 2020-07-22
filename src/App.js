@@ -10,6 +10,7 @@ import Contact from './Contact';
 import Footer from './Footer';
 
 function App() {
+  window.emailjs.init(process.env.REACT_APP_UID)
   return (
     <div className="App">
       <Header className='main-header' />

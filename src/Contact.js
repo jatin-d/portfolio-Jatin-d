@@ -9,11 +9,12 @@ export default class Contact extends React.Component{
     }
 
     handleSubmit = req => {
-        const template = "portfolio_contact_form"
-        const userId = "user_l63s4t0wZNXoSLrftgU2L"
+        const template = process.env.REACT_APP_PCF
+        const userId = process.env.REACT_APP_UID
+        console.log("JD userId"+userId);
         const params = req
-
-        window.emailjs.send('default_service', template, userId, params).then(res => {
+        
+        window.emailjs.send('default_service', template, params, userId).then(res => {
             this.setState({...this.state, isLoading:false})
             console.log(res)
         }).catch(e => {

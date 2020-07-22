@@ -1,5 +1,19 @@
-.formContainer{
+.ContactViewWrap{
     display: flex;
     flex-flow: column;
-    height: 200px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.formContainer{
+    width: 60%;
+    display: flex;
+    flex-flow: column;
+    margin: 0 auto;
+    height: 100vh;
+}
+.formContainer input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
 }
