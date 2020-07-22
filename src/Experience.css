@@ -1,0 +1,63 @@
+.experience-container{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.resume-experience-heading{
+    text-align: center;
+}
+.resume-experience{
+    display: grid;
+    margin: 0 auto;
+    width: 60%;
+    align-items: center;
+    text-align: left;
+    height: fit-content;
+}
+.resume-experience-ga, .resume-experience-se, .resume-experience-lt{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.resume-text{
+    margin: 0;
+    font-size: 10px;
+    text-align: justify;
+}
+.resume-internal-heading{
+    margin: 0;
+}
+.res-exp-se-symbol, .res-exp-ga-symbol, .res-exp-lt-symbol{
+    text-align: center;
+    font-size: 20px;
+}
+.experience-background{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(197, 197, 197);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+.exp-icon{
+    font-size: 25px;
+    color: rgb(90, 120, 255);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+.exp-icon:hover{
+    transform: scale(1.1);
+    color: rgb(250, 24, 80);
+    text-shadow: 1px 1px 2px rgb(116, 99, 101);
+}
+
+@media (max-width:768px){
+    .resume-experience-ga, .resume-experience-se, .resume-experience-lt{
+        grid-template-columns: none;
+        grid-template-rows:2fr 1fr 2fr;
+    }
+}
+

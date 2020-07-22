@@ -1,0 +1,24 @@
+.footer-wrapper{
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+    width: 100%;
+    background: rgb(238, 238, 238);
+}
+
+.footer-link{
+    color: gray;
+    font-size: 20px;
+    margin: 10px;
+}
+#footer-credentials{
+    display: inline;
+    font-size: 10px;
+    color: gray;
+}
+.footer-credentials{
+    display: inline;
+}
+#footer-nav{
+    display: inline;
+} 

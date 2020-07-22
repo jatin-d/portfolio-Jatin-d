@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+.about-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.65);
+}
+.about-text .address{
+    font-size: 30px;
+    color: rgb(253, 253, 214);
+}
+.about-text .intro{
+    font-size: 20px;
+    color: rgb(253, 253, 214);
+}
+.about-text .details{
+    font-size: 10px;
+    color: rgb(253, 253, 214);
+}
+
+@media (max-width:768px){
+    .about-container{
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+

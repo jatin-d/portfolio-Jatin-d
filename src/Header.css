@@ -1,0 +1,188 @@
+.menu-wrap{
+    display: none;
+}
+.logo{
+    font-size: 15px;
+    font-weight: 1000;
+    color: rgba(55, 55, 120, 0.8);
+    font-family: 'Cedarville Cursive', cursive;
+    margin: 0;
+    justify-self: start;
+    margin-left: 50px;
+}
+.fixed-header{
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Monda', sans-serif;
+    background: rgb(238, 238, 238);
+    z-index: 999;
+}
+#main-header-nav{
+    font-size: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-hamburger-menu{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    display: none;
+}
+.header-hamburger-menu:focus{
+    outline: none;
+}
+a{
+    text-decoration: none;
+    color: rgba(55, 55, 120, 0.8);
+}
+a:hover{
+    color: rgb(135, 34, 0);
+    text-shadow: rgba(100, 36, 113, 0.7) 1px 0 10px;;
+}
+
+@media (max-width: 500px){
+
+    .menu-wrap{
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+    .menu-wrap .toggler{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 9999;
+        cursor: pointer;
+        width: 23px;
+        height: 23px;
+        opacity: 0;
+    }
+    
+    .menu-wrap .hamburger{
+        position: absolute;
+        top: 0;
+        right: 5px;
+        z-index: 9997;
+        height: 25px;
+        width: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .menu-wrap .hamburger > div{
+        position: relative;
+        flex: none;
+        width: 100%;
+        height: 3px;
+        background: rgba(55, 55, 120, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s ease;
+    }
+    
+    .menu-wrap .hamburger > div::before, .menu-wrap .hamburger > div::after{
+        content: '';
+        position: absolute;
+        z-index: 9997;
+        top: -8px;
+        width: 100%;
+        height: 3px;
+        background: inherit;
+    }
+    .menu-wrap .hamburger > div::after{
+        top: 8px;
+    }
+    
+    .menu-wrap .toggler:checked + .hamburger > div {
+        transform: rotate(135deg);
+    }
+    
+    .menu-wrap .toggler:checked + .hamburger > div::before, .menu-wrap .toggler:checked + .hamburger > div::after { 
+        top: 0;
+        transform: rotate(90deg);
+    }
+    .menu-wrap .toggler:checked:hover + .hamburger > div {
+        transform: rotate(225deg);
+    }
+    
+    .menu-wrap .toggler:checked ~ .menu {
+        visibility: visible;
+    }
+    .menu-wrap .toggler:checked ~ .menu > div {
+        transform: scale(1);
+        transition-duration: 0.45s;
+    }
+    .menu-wrap .toggler:checked ~ .menu > div > div {
+        opacity: 1;    
+        transition: opacity 0.4s ease 0.4s;
+    }
+    
+    
+    
+    .menu-wrap .menu{
+        position: fixed;
+        top: 30px;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+        overflow: hidden;
+        display: flex;
+        align-items: top;
+        justify-content: flex-end;
+    }
+    .menu-wrap .menu > div{
+        background: rgba(146, 146, 146, 0.75);
+        height: 150px;
+        width: 200px;
+        display: flex;
+        flex: none;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s ease-in-out;
+    }
+    .menu-wrap .menu > div > div{
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        background: rgba(238, 238, 238, 1);
+        opacity: 0;
+        transition: opacity 0.2s ease-in-out;
+    }
+    
+    .menu-wrap .menu >div >div >ul >li {
+        list-style: none;
+        font-size: 10px;
+        padding: 10px;
+
+    }
+    .menu-wrap .menu >div >div >ul >li >a {
+        color: rgba(55, 55, 120, 0.8);
+        text-decoration: none;
+        transition: all 0.3s ease-in;
+        padding: 5px;
+    }
+    
+    .menu-wrap .menu >div >div >ul >li >a:hover{
+        color: rgb(135, 34, 0);
+        text-shadow: rgba(100, 36, 113, 0.7) 1px 0 10px;;
+        /* border-left: 3px solid rgb(215, 81, 55); */
+    }
+
+
+
+
+
+    #main-header-nav{
+        display: none;
+    }
+}
+
