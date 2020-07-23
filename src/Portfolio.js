@@ -32,7 +32,7 @@ export default function Portfolio(){
                             <div className='portfolio-item-overlay-content-wrapper'>
                                 <h6 className="portfolio-item-heading">Common utils</h6>
                                 <p className="portfolio-item-text">A web app for shared utility items such as to-do list, calendar, reminders etc. A React application including server side on NodeJS and database on PostgreSQL</p>
-                                <a className='portfolio-demo-link' href="#">DEMO</a>
+                                <a className='portfolio-demo-link' href="https://magic-melbourne-moments.herokuapp.com/">DEMO</a>
                             </div>
                         </div>
                         <img src="common-utils.png" alt="common-utils cover"/>
@@ -52,7 +52,7 @@ export default function Portfolio(){
                             <div className='portfolio-item-overlay-content-wrapper'>
                                 <h6 className="portfolio-item-heading">Portfolio Website</h6>
                                 <p className="portfolio-item-text">My own portfolio website created using ReactJS. An animation that continuously updates is created by in React and I intend to update it time to time to create different shapes</p>
-                                <a className='portfolio-demo-link' href="#">DEMO</a>
+                                <a className='portfolio-demo-link' href="https://magic-melbourne-moments.herokuapp.com/">DEMO</a>
                             </div>
                         </div>
                         <img src="portfolio-jatin.png" alt="portfolio cover"/>
