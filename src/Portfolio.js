@@ -12,7 +12,7 @@ export default function Portfolio(){
                             <div className='portfolio-item-overlay-content-wrapper'>
                                <h6 className="portfolio-item-heading">Tic-Tac-Toe</h6>
                                 <p className="portfolio-item-text">A board game with options to play between two players or with computer bot. Developed using HTML, CSS and JavaScript.</p>
-                                <a className='portfolio-demo-link' href="">DEMO</a> 
+                                <a className='portfolio-demo-link' href="https://jatin-d.github.io/project1-tic-tac-toe/">DEMO</a> 
                             </div>
                         </div>
                         <img className='portfolio-item-img' src="tictactoe.png" alt="tic-tac-toe cover"/>
@@ -22,7 +22,7 @@ export default function Portfolio(){
                             <div className='portfolio-item-overlay-content-wrapper'>
                                  <h6 className="portfolio-item-heading">Poll To Pass</h6>
                                 <p className="portfolio-item-text">A web-based platform to post polls. Developed using HTML5, and CSS for front-end and Ruby with Sinatra for the back-end.</p>
-                                <a className='portfolio-demo-link' href="">DEMO</a>
+                                <a className='portfolio-demo-link' href="https://poll-to-pass-api.herokuapp.com/">DEMO</a>
                             </div>  
                         </div>
                         <img src="polltopass.png" alt="poll-to-pass cover"/>
@@ -42,7 +42,7 @@ export default function Portfolio(){
                             <div className='portfolio-item-overlay-content-wrapper'>
                                 <h6 className="portfolio-item-heading">Magic Melbourne</h6>
                                 <p className="portfolio-item-text">A web app to guide tourists around Melbourne. Developed in a team of four using NodeJS</p>
-                                <a className='portfolio-demo-link' href="">DEMO</a>
+                                <a className='portfolio-demo-link' href="https://magic-melbourne-moments.herokuapp.com/">DEMO</a>
                             </div>
                         </div>
                         <img src="magicmelb.png" alt="magic-melbourne cover"/>
@@ -62,7 +62,7 @@ export default function Portfolio(){
                             <div className='portfolio-item-overlay-content-wrapper'>
                                 <h6 className="portfolio-item-heading">Planets</h6>
                                 <p className="portfolio-item-text">A fun web page created using Ruby and Sinatra. Its a CRUD app implementing database in Postgre SQL. This little project was created using MVC principle in Ruby platform</p>
-                                <a className='portfolio-demo-link' href="">DEMO</a>
+                                <a className='portfolio-demo-link' href="https://damp-waters-88377.herokuapp.com/">DEMO</a>
                             </div>
                         </div>
                         <img src="planets.png" alt="planets cover"/>
