@@ -1,6 +1,28 @@
 import React from 'react';
-// import './Contact.css';
-import ContactForm from './ContactForm';
+import './Contact.css';
+import FadeIn from "react-fade-in";
+import Lottie from "react-lottie";
+import * as progressLogo from "./progress.json"
+import * as success from "./success.json";
+import ContactForm from "./ContactForm"
+
+const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: progressLogo.default,
+    rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice"
+    }
+}
+
+const defaultOptions2 = {
+    loop: false,
+    autoplay: true,
+    animationData: success.default,
+    rendererSettings: {
+       preserveAspectRatio: "xMidYMid slice"
+    }
+};
 
 export default class Contact extends React.Component{
     state ={
@@ -11,15 +33,13 @@ export default class Contact extends React.Component{
     handleSubmit = req => {
         const template = process.env.REACT_APP_PCF
         const userId = process.env.REACT_APP_UID
-        console.log("JD userId"+userId);
+        // const userId = '1234'
         const params = req
         
         window.emailjs.send('default_service', template, params, userId).then(res => {
             this.setState({...this.state, isLoading:false})
-            console.log(res)
         }).catch(e => {
             this.setState({...this.state, isLoading:false})
-            console.log(e)
         })
     }
 
@@ -29,18 +49,29 @@ export default class Contact extends React.Component{
     }
 
     render(){
-        return(
-            <div className="ContactWrapper">
-                    <div className="ContactWrap">
-                        {
-                            // this.state.isLoading ? 
-                            //     <CircularProgress className="load" /> :
-                            //     this.state.formSubmitted ? 
-                            //     <Submitted /> :
-                                <ContactForm handleCraftReq={this.handleCraftReq} />
-                        }
+        return (
+            <div className='contact-wrapper'>
+                {this.state.formSubmitted ? (
+                <FadeIn>
+                    <div class="mailer-anim-container">
+                    {this.state.isLoading ? (
+                        <div className="anim-sending-wrapper">
+                           <h6>Sending</h6>
+                            <Lottie options={defaultOptions} height={120} width={120} /> 
+                        </div>
+                    ) : (
+                        <div className="anim-sent-wrapper">
+                            <h6>Sent</h6>
+                            <Lottie options={defaultOptions2} height={120} width={120} />
+                            <h6>Thank you..!</h6>
+                        </div>
+                    )}
                     </div>
+                </FadeIn>
+                ) : (
+                    <ContactForm handleCraftReq={this.handleCraftReq} />
+                )}
             </div>
-        )
+        );
     } 
 }

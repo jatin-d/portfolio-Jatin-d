@@ -29,33 +29,41 @@ class ContactForm extends React.Component{
 
     render() {
         return (
-            <div className="ContactViewWrap">
-                <h2>Reach-out to me..!</h2>
-                <form className="formContainer" noValidate autoComplete="off" onSubmit={this.handleSubmit} action="">
-                    <label>Name</label>
+            <div className="contactForm-wrapper">
+                <div className="contact-textContainer">
+                     <h6 className='contactForm-heading'>Drop me a line</h6>
+                    <p className='contactForm-text'>
+                        I am always excited to interact with people, know their story and tell them mine and make long-lasting connections. <em>Drop me few words..!</em>
+                    </p>
+                </div>
+                <form className="contactForm-formContainer" noValidate autoComplete="off" onSubmit={this.handleSubmit} action="">
+                    <label className='contactForm-label'>Name</label>
                     <input 
                         id="outlined-name"
+                        className='contactForm-input'
                         name="name"
                         value={this.state.name}
                         onChange={this.handleChange}
                     />
-                    <label>e-mail</label>
+                    <label className='contactForm-label'>e-mail</label>
                     <input 
                         id="outlined-email-input"
+                        className='contactForm-input'
                         type="email"
                         name="email"
                         autoComplete="email"
                         value={this.state.email}
                         onChange={this.handleChange}
                     />
-                    <label>Message</label>
+                    <label className='contactForm-label'>Message</label>
                     <input 
                         id="outlined-textarea"
+                        className='contactForm-input contactForm-input-textArea'
                         name="multiline"
                         value={this.state.multiline}
                         onChange={this.handleChange}
                     />
-                    <button type="submit">Send</button>
+                    <button className='contactForm-input contactForm-submit-button' type="submit">Send</button>
                 </form>
             </div>
         )
