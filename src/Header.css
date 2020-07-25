@@ -2,26 +2,25 @@
     display: none;
 }
 .logo{
-    font-size: 15px;
-    font-weight: 1000;
-    color: rgba(55, 55, 120, 0.8);
-    font-family: 'Cedarville Cursive', cursive;
     margin: 0;
-    justify-self: start;
-    margin-left: 50px;
+    margin-left: 20px;
+    padding-left: 3px;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 30px;
+    text-align: left;
+    color: rgb(255, 219, 140);
 }
 .fixed-header{
     position: fixed;
     width: 100%;
-    height: 30px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    font-family: 'Monda', sans-serif;
-    background: rgb(238, 238, 238);
+    grid-template-columns: 2fr 1fr;
+    /* font-family: 'Monda', sans-serif; */
+    background: linear-gradient(0.25turn, #808080, rgb(204, 204, 204));
     z-index: 999;
 }
 #main-header-nav{
-    font-size: 10px;
+    font-size: 18px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -35,13 +34,20 @@
 .header-hamburger-menu:focus{
     outline: none;
 }
-a{
+#main-header-nav a{
+    padding: 10px;
     text-decoration: none;
-    color: rgba(55, 55, 120, 0.8);
+    color: rgba(0, 0, 0, 1);
+    transition: all 0.3s ease;
+    transform: scale(1);
 }
-a:hover{
-    color: rgb(135, 34, 0);
-    text-shadow: rgba(100, 36, 113, 0.7) 1px 0 10px;;
+#main-header-nav a:hover{
+    transform: scale(1.2);
+    color: rgb(255, 219, 140);
+    font-weight: 900;
+}
+#main-header-nav a:focus{
+    outline: none;
 }
 
 @media (max-width: 500px){
@@ -124,8 +130,6 @@ a:hover{
         transition: opacity 0.4s ease 0.4s;
     }
     
-    
-    
     .menu-wrap .menu{
         position: fixed;
         top: 30px;
@@ -176,13 +180,7 @@ a:hover{
         text-shadow: rgba(100, 36, 113, 0.7) 1px 0 10px;;
         /* border-left: 3px solid rgb(215, 81, 55); */
     }
-
-
-
-
-
     #main-header-nav{
         display: none;
     }
 }
-
