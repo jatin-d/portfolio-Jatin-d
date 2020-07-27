@@ -53,10 +53,10 @@ function About(){
                             
                         </div>
                     <div className="about-intro-navigation">
-                        {getLinkElement('Profile and prowesses', 1.25)}
-                        {getLinkElement('A kaleidoscopic journey @ work', 1.5)}
-                        {getLinkElement('Education and Life lessons', 1.75)}
-                        {getLinkElement('Coding endeavors', 2)}
+                        {getLinkElement('Profile', 1.25)}
+                        {/* {getLinkElement('A kaleidoscopic journey @ work', 1.5)}
+                        {getLinkElement('Education and Life lessons', 1.75)} */}
+                        {getLinkElement('Project portfolio', 2)}
                         {getLinkElement('Play while I play', 2.25)}
                         {getLinkElement('Get in touch', 2.50)}
                     </div>

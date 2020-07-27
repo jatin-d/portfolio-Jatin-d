@@ -14,7 +14,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    background: linear-gradient(0.25turn, #808080, rgb(204, 204, 204));
+    /* background: linear-gradient(0.25turn, #808080, rgb(204, 204, 204)); */
     z-index: 999;
 }
 #main-header-nav{

@@ -9,7 +9,11 @@ export default function Portfolio(){
     return(
         <div className="portfolio-container">
             <div className="portfolio-wrapper">
-                <h6 className='portfolio-heading'>Portfolio</h6>
+                <div className="portfolio-text-wrapper">
+                    <h6 className='portfolio-heading'>Check Out Some of My Works.</h6>
+                    <p className="portfolio-text">While learning development skills, I tried to capture every learning and attempted to craft them in form of a project. Following are my projects replicating my journey so far and going...</p> 
+                </div>
+                
                 <div className="portfolio-grid">
                     <div className="portfolio-item-container">
                         <div className="portfolio-item-overlay">
@@ -141,7 +145,6 @@ export default function Portfolio(){
                     </div>
                 </Carousel>
             </div>
-            <div className="portfolio-background"></div>
         </div>
     )
 }

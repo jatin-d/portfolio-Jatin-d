@@ -16,8 +16,8 @@ function App() {
       <Header className='main-header' />
       <About />
       <Profile />
-      <Experience id="resume" />
-      <Education />
+      {/* <Experience id="resume" />
+      <Education /> */}
       <Portfolio id="projects"/>
       <Contact id="contact"/>
       <Footer />

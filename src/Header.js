@@ -1,5 +1,7 @@
 import React from 'react'
 import './Header.css'
+import Pdf from './Documents/Jatin-d-Resume.pdf';
+
 
 export default function Header(){
     // const handleClick = e => {
@@ -29,7 +31,12 @@ export default function Header(){
                 {/* <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a> */}
 
-                <a href="#resume"><i class="fas fa-file-download"></i> Resume</a>
+                <a 
+                    style={{display: "table-cell"}} 
+                    href={Pdf}
+                    rel="noopener noreferrer"
+                    target='_blank'
+                ><i class="fas fa-file-download"></i> Resume</a>
             </nav>  
         </header>
     )

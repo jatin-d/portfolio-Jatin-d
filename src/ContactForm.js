@@ -1,5 +1,7 @@
 import React from 'react';
 import './ContactForm.css'
+import Pdf from './Documents/Jatin-d-Resume.pdf';
+
 
 class ContactForm extends React.Component{
 
@@ -35,28 +37,37 @@ class ContactForm extends React.Component{
                     <p className='contactForm-text'>
                         I am always excited to interact with people, know their story and tell them mine and make long-lasting connections. <em>Drop me few words..!</em>
                     </p>
-                    <h6 className='contactForm-heading'>Or find me on internet</h6>
+                    <h6 className='contactForm-sub-heading'>Or find me on internet</h6>
                     <div className="contactForm-social">
-                        <a style={{display: "table-cell"}} 
-                        href="https://www.linkedin.com/in/jatin-d"
-                        rel="noopener noreferrer"
-                        target='_blank'
-                        className='contactForm-social-link' ><i className="fab fa-linkedin"></i></a>
-                        
-                        <a style={{display: "table-cell"}} 
-                        href="https://github.com/jatin-d"
-                        rel="noopener noreferrer"
-                        target='_blank'
-                        className='contactForm-social-link' ><i className="fab fa-github-square"></i></a>
-                        
-                        <a style={{display: "table-cell"}} 
-                        href="https://medium.com/@jatin.dhandhalya"
-                        rel="noopener noreferrer"
-                        target='_blank'
-                        className='contactForm-social-link'><i 
-                        className="fab fa-medium"></i></a>
-                    </div> 
-
+                        <a 
+                            style={{display: "table-cell"}} 
+                            href="https://www.linkedin.com/in/jatin-d"
+                            rel="noopener noreferrer"
+                            target='_blank'
+                            className='contactForm-social-link' 
+                        ><i className="fab fa-linkedin"></i></a>
+                        <a 
+                            style={{display: "table-cell"}} 
+                            href="https://github.com/jatin-d"
+                            rel="noopener noreferrer"
+                            target='_blank'
+                            className='contactForm-social-link' 
+                        ><i className="fab fa-github-square"></i></a>
+                        <a 
+                            style={{display: "table-cell"}} 
+                            href="https://medium.com/@jatin.dhandhalya"
+                            rel="noopener noreferrer"
+                            target='_blank'
+                            className='contactForm-social-link'
+                        ><i className="fab fa-medium"></i></a>
+                    </div>
+                    <a 
+                    className='contactForm-download-resume-link'
+                    style={{display: "table-cell"}} 
+                    href={Pdf}
+                    rel="noopener noreferrer"
+                    target='_blank'
+                    ><i class="fas fa-file-download"></i> Resume</a>
                 </div>
                 <form className="contactForm-formContainer" noValidate autoComplete="off" onSubmit={this.handleSubmit} action="">
                     <label className='contactForm-label'>Your name</label>
@@ -78,7 +89,7 @@ class ContactForm extends React.Component{
                         onChange={this.handleChange}
                     />
                     <label className='contactForm-label'>Your message</label>
-                    <input 
+                    <textarea 
                         id="outlined-textarea"
                         className='contactForm-input contactForm-input-textArea'
                         name="multiline"

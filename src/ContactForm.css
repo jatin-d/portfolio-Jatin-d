@@ -13,6 +13,13 @@
     margin-left: 150px;
 }
 .contactForm-heading{
+    font-size: 40px;
+    text-align: left;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.contactForm-sub-heading{
     font-size: 30px;
     text-align: left;
     margin: 0;
@@ -35,6 +42,13 @@
     font-size: 40px;
     color: gray;
     margin-right: 40px;
+}
+.contactForm-download-resume-link{
+    font-size: 30px;
+    text-decoration: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: gray;
 }
 
 
@@ -80,13 +94,43 @@
 }
 .contactForm-input-textArea{
     height: 100px;
-    justify-content: start;
+    /* justify-content: start;
+    align-items: flex-start; */
 }
+
 
 @media (max-width:768px){
     .contactForm-wrapper{
         grid-template-columns: none;
         grid-template-rows: 1fr 1fr;
         height: 80%;
+    }
+    .contact-textContainer{
+        margin-left: 20px;
+    }
+    .contactForm-heading{
+        font-size: 30px;
+    }
+    .contactForm-sub-heading{
+        font-size: 25px;
+    }
+    .contactForm-text{
+        font-size: 18px;
+    }
+    .contactForm-social{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .contactForm-download-resume-link{
+        font-size: 25px;
+    }
+    .contactForm-formContainer{
+        padding: 10px;
+    }
+    .contactForm-label{
+        font-size: 18px;
+    }
+    .contactForm-input{
+        font-size: 18px;
     }
 }
