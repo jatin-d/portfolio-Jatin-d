@@ -7,6 +7,10 @@ import {fadeInLeft} from 'react-animations'
 import {flash} from 'react-animations'
 import {bounceInLeft} from 'react-animations'
 import Typical from 'react-typical'
+import { 
+    Link,
+    // Redirect,
+} from 'react-router-dom'
 
 
 
@@ -26,7 +30,7 @@ function About(){
         <div className="about-container">
             <main className="about-text">
                 <div className="about-intro">
-                        <div className="about-intro-text-wrapper">
+                    <div className="about-intro-text-wrapper">
                             <FadeIn className='intro-address'>
                                 <p className='address'>Hello, I am Jatin</p>
                             </FadeIn>
@@ -46,19 +50,22 @@ function About(){
                             </FadeIn>
                             <FadeIn>
                                 <Flash className='intro-instruction'>
-                                    <p className='intro-instruction-text'>Click to know more</p>
+                                    <p className='intro-instruction-text'>Click below to know more</p>
                                     <i class="fas fa-angle-down intro-arrow"></i>
                                 </Flash>
-                            </FadeIn>
-                            
+                            </FadeIn>  
                         </div>
                     <div className="about-intro-navigation">
-                        {getLinkElement('Profile', 1.25)}
+                        <Link to="/profile">{getLinkElement('Profile', 1.25)}</Link>
+                        <Link to="/portfolio">{getLinkElement('Project portfolio', 2)}</Link>
+                        <Link to="/play">{getLinkElement('Play while I play', 2.25)}</Link>
+                        <Link to="/contact">{getLinkElement('Get in touch', 2.50)}</Link>
+                        
                         {/* {getLinkElement('A kaleidoscopic journey @ work', 1.5)}
                         {getLinkElement('Education and Life lessons', 1.75)} */}
-                        {getLinkElement('Project portfolio', 2)}
-                        {getLinkElement('Play while I play', 2.25)}
-                        {getLinkElement('Get in touch', 2.50)}
+                        
+                        
+                        
                     </div>
                 </div>
             </main>

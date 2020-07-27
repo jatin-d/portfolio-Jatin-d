@@ -1,6 +1,7 @@
 .contactForm-wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
 }
 
 
@@ -27,6 +28,7 @@
     padding-bottom: 20px;
 }
 .contactForm-text{
+    line-height: 40px;
     text-align: left;
     margin: 0;
     font-size: 20px;
@@ -58,6 +60,7 @@
     flex-flow: column;
     padding: 20px;
     text-align: start;
+    margin-right: 100px;
 }
 .contactForm-label{
     font-size: 20px;
@@ -82,7 +85,7 @@
 .contactForm-submit-button{
     width: 50%;
     border: none;
-    background-color: rgb(239, 164, 72);
+    background: rgba(254, 177, 82, 0.9);
     border-radius: 3px;
     font-size: 20px;
     padding: 10px;
@@ -104,15 +107,19 @@
         grid-template-columns: none;
         grid-template-rows: 1fr 1fr;
         height: 80%;
+        grid-gap: 0;
     }
     .contact-textContainer{
-        margin-left: 20px;
+        margin-left: 0;
+        padding: 20px;
     }
     .contactForm-heading{
         font-size: 30px;
+        padding-bottom: 5px;
     }
     .contactForm-sub-heading{
         font-size: 25px;
+        padding-bottom: 5px;
     }
     .contactForm-text{
         font-size: 18px;
@@ -122,15 +129,20 @@
         padding-bottom: 10px;
     }
     .contactForm-download-resume-link{
-        font-size: 25px;
+        font-size: 20px;
+        padding-bottom: 0;
     }
     .contactForm-formContainer{
         padding: 10px;
+        margin-right: 0;
     }
     .contactForm-label{
         font-size: 18px;
     }
     .contactForm-input{
         font-size: 18px;
+    }
+    .contactForm-input-textArea{
+        height: 80px;
     }
 }

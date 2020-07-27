@@ -11,9 +11,7 @@ export default function Profile(props) {
                 <div className="profile-section-container">
                     <h6 className="profile-heading">Profile and prowesses</h6>
                     <div className="profile-text"> 
-                        <p>A graduate in Software Engineering Immersive Boot-camp from General Assembly - Melbourne.</p>
-                        <p>A seasoned professional having several years of experience in collaborating with multiple teams across the globe.</p> 
-                        <p>A mechanical engineer who ensure quality product delivery while meeting project timelines and maintaining good team health.</p> 
+                        <p>A graduate in Software Engineering Immersive Boot-camp from General Assembly - Melbourne. A seasoned professional having several years of experience in collaborating with multiple teams across the globe. A mechanical engineer who ensure quality product delivery while meeting project timelines and maintaining good team health.</p> 
                     </div>
                     <h6 className="profile-skills-heading">I can work with...</h6>
                     <div className="profile-skills-list">
@@ -34,7 +32,7 @@ export default function Profile(props) {
                             <p className="profile-skills-list-items">Postman</p>
                         </div>
                         <div>
-                            <p className="profile-skills-list-items">Rest-full</p>
+                            <p className="profile-skills-list-items">Restful WS</p>
                             <p className="profile-skills-list-items">AWS</p>
                             <p className="profile-skills-list-items">GraphQL</p>
                             <p className="profile-skills-list-items">VS Code</p>

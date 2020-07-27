@@ -1,7 +1,7 @@
 import React from 'react'
-import './Footer.css'
+import './Play.css'
 
-export default function Footer(){
+export default function Play(){
     return(
         <footer className="footer-wrapper">
             <section className="footer-credentials"><p>&reg; Designed & Created by Jatin D.</p></section>
@@ -11,6 +11,5 @@ export default function Footer(){
                 <a className='footer-link' href="#medium"><i className="fab fa-medium"></i></a>
             </nav>  
         </footer>
-        
     )
 }

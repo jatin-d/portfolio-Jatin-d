@@ -1,6 +1,7 @@
 .portfolio-wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
     align-items: center;
     height: 100vh;
     width: 100vw; 
@@ -15,11 +16,14 @@
     margin-left: 150px;
     text-align: left;
     font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .portfolio-text{
     margin: 0;
     margin-left: 150px;
     text-align: justify;
+    line-height: 40px;
     font-size: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -36,14 +40,14 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin: 0;
-    margin-right: 20px;
+    margin-right: 100px;
     grid-gap: 20px;
     height: fit-content;
 }
 .portfolio-item-container{
     border-radius: 10px;
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
     background-color: rgb(195, 195, 195);
     display: flex;
     align-items: center;
@@ -110,22 +114,20 @@
     font-size: 20px;
     font-weight: 900;
 }
-
-
-
-
-
-.carousel-root{
+.carousel .slide{
+    background-color: white;
+}
+.portfolio-mobile-view{
     display: none;
 }
 
 @media (max-width:768px){
     .portfolio-heading{
-        margin-left: 20px;
+        margin-left: 0;
         font-size: 30px;
     }
     .portfolio-text{
-        margin-left: 20px;
+        margin-left: 0;
         font-size: 18px;
     }
 
@@ -133,8 +135,10 @@
     .portfolio-wrapper{
         grid-template-columns: none;
         grid-template-rows: 1fr 1fr;
+        align-items: baseline;
+        grid-gap: 0;
     }
-    .carousel-root{
+    .portfolio-mobile-view{
         display: flex;
         flex-flow: column;
         align-items: center;        

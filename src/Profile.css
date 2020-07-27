@@ -2,6 +2,7 @@
 .profile-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
 }
 .profile-section-container{
     display: flex;
@@ -19,6 +20,7 @@
 }
 .profile-text{
     margin: 0;
+    line-height: 40px;
     margin-left: 150px;
     text-align: justify;
     font-size: 20px;
@@ -65,7 +67,7 @@
 } 
 .leng-icon{
     font-size: 70px;
-    color: rgb(148, 212, 255);
+    color: rgba(254, 177, 82, 0.9);
     transition: all 0.3s ease-in-out;
 }
 .leng-icon:hover{
@@ -83,14 +85,15 @@
     .profile-container{
         grid-template-columns: none;
         grid-template-rows: 80% 20%;
+        grid-gap: 0;
     }
     .profile-section-container{
         width: 100vw;
     }
     .profile-heading{
-        margin-left: 0;
+        margin-left: 10px;
         font-size: 30px;
-        padding: 20px;
+        padding: 10px;
     }
     .profile-text{
         padding: 20px;
@@ -98,9 +101,9 @@
         font-size: 18px;
     }
     .profile-skills-heading{
-        padding: 20px;
+        padding: 10px;
         font-size: 25px;
-        margin-left: 0;
+        margin-left: 10px;
     }
     .profile-skills-list{
         padding: 20px;

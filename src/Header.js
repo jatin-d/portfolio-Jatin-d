@@ -1,6 +1,9 @@
 import React from 'react'
 import './Header.css'
 import Pdf from './Documents/Jatin-d-Resume.pdf';
+import {
+    Link 
+} from 'react-router-dom'
 
 
 export default function Header(){
@@ -9,7 +12,7 @@ export default function Header(){
     // }
     return(
         <header className="fixed-header">
-            <h6 className='logo'>JD</h6>
+            <Link to="/"><h6 className='logo'>Jatin.D</h6></Link>
             <div className="menu-wrap">
                 <input type="checkbox" className='toggler'/>
                 <div className="hamburger"><div></div></div>
@@ -27,7 +30,9 @@ export default function Header(){
                 </div>
             </div>
             <nav id="main-header-nav">
+                <Link to="/">
                 <a href="#projects">Home</a>
+                </Link>
                 {/* <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a> */}
 

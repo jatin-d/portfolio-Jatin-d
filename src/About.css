@@ -4,6 +4,7 @@
 .about-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
     height: 100vh;
     width: 100vw;
     /* background: linear-gradient(0.25turn, #808080, rgb(204, 204, 204)); */
@@ -16,6 +17,7 @@
 }
 .about-intro-text-wrapper{
     margin: 0;
+    margin-top: 50px;
     text-align: left;
     margin-left: 150px;
     padding: 10px;
@@ -60,7 +62,7 @@
 }
 
 .about-intro-navigation-link:hover{
-    color: rgb(255, 219, 140);
+    color: rgba(254, 177, 82, 0.9);
 }
 
 
@@ -91,6 +93,7 @@
     .about-container{
         grid-template-columns: none;
         grid-template-rows: 1fr;
+        grid-gap: 0;
     }
     .about-intro-navigation{
         margin-left: 20px;

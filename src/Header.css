@@ -2,18 +2,20 @@
     display: none;
 }
 .logo{
+    font-family: 'Cedarville Cursive', cursive;
     margin: 0;
     margin-left: 20px;
     padding-left: 3px;
     font-size: 30px;
     text-align: left;
-    color: rgb(255, 219, 140);
+    color: rgba(55, 67, 235, 0.9);
 }
 .fixed-header{
     position: fixed;
     width: 100%;
     display: grid;
     grid-template-columns: 2fr 1fr;
+    background-color: rgb(255, 255, 255);
     /* background: linear-gradient(0.25turn, #808080, rgb(204, 204, 204)); */
     z-index: 999;
 }
@@ -41,7 +43,7 @@
 }
 #main-header-nav a:hover{
     transform: scale(1.2);
-    color: rgb(255, 219, 140);
+    color: rgba(254, 177, 82, 0.9);
     font-weight: 900;
 }
 #main-header-nav a:focus{
