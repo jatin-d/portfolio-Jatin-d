@@ -64,6 +64,11 @@
 .about-intro-navigation-link:hover{
     color: rgba(254, 177, 82, 0.9);
 }
+.router-link{
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+}
 
 
 

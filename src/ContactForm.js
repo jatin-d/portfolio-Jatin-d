@@ -1,6 +1,13 @@
 import React from 'react';
 import './ContactForm.css'
 import Pdf from './Documents/Jatin-d-Resume.pdf';
+import styled, { keyframes } from 'styled-components'
+import {bounceInLeft} from 'react-animations'
+import {bounceInRight} from 'react-animations'
+
+
+const BounceInLeft = styled.div`animation: 2s ${keyframes`${bounceInLeft}`}`
+const BounceInRight = styled.div`animation: 2s ${keyframes`${bounceInRight}`}`
 
 
 class ContactForm extends React.Component{
@@ -32,6 +39,7 @@ class ContactForm extends React.Component{
     render() {
         return (
             <div className="contactForm-wrapper">
+                <BounceInLeft>
                 <div className="contact-textContainer">
                     <h6 className='contactForm-heading'>Drop me a line</h6>
                     <p className='contactForm-text'>
@@ -69,6 +77,8 @@ class ContactForm extends React.Component{
                     target='_blank'
                     ><i class="fas fa-file-download"></i> Resume</a>
                 </div>
+                </BounceInLeft>
+                <BounceInRight>
                 <form className="contactForm-formContainer" noValidate autoComplete="off" onSubmit={this.handleSubmit} action="">
                     <label className='contactForm-label'>Your name</label>
                     <input 
@@ -98,6 +108,7 @@ class ContactForm extends React.Component{
                     />
                     <button className='contactForm-input contactForm-submit-button' type="submit">Send</button>
                 </form>
+                </BounceInRight>
             </div>
         )
     }

@@ -6,6 +6,7 @@ import * as progressLogo from "./progress.json"
 import * as success from "./success.json";
 import ContactForm from "./ContactForm"
 
+
 const defaultOptions = {
     loop: true,
     autoplay: true,

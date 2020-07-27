@@ -12,7 +12,7 @@ export default function Header(){
     // }
     return(
         <header className="fixed-header">
-            <Link to="/"><h6 className='logo'>Jatin.D</h6></Link>
+            <Link className="router-link" to="/"><h6 className='logo'>Jatin.D</h6></Link>
             <div className="menu-wrap">
                 <input type="checkbox" className='toggler'/>
                 <div className="hamburger"><div></div></div>
@@ -30,7 +30,7 @@ export default function Header(){
                 </div>
             </div>
             <nav id="main-header-nav">
-                <Link to="/">
+                <Link className="router-link" to="/">
                 <a href="#projects">Home</a>
                 </Link>
                 {/* <a href="#projects">Projects</a>

@@ -1,13 +1,19 @@
 import React from 'react';
 import './Profile.css';
+import styled, { keyframes } from 'styled-components'
+import {bounceInLeft} from 'react-animations'
+import {bounceInRight} from 'react-animations'
 
 
+const BounceInLeft = styled.div`animation: 2s ${keyframes`${bounceInLeft}`}`
+const BounceInRight = styled.div`animation: 2s ${keyframes`${bounceInRight}`}`
 
 
 export default function Profile(props) {
     return(
         <div className="profile-pageWrapper">
             <div className="profile-container">
+                <BounceInLeft>
                 <div className="profile-section-container">
                     <h6 className="profile-heading">Profile and prowesses</h6>
                     <div className="profile-text"> 
@@ -41,8 +47,12 @@ export default function Profile(props) {
                         </div>
                     </div>
                 </div>
-                <div className="profile-skills-icons-wrapper">
-                    
+                </BounceInLeft>
+                
+
+                
+                <div className="profile-skills-icons-wrapper">   
+                <BounceInRight>  
                     <div class="skill-icon-container">
                         <div className="skil-icon-wrapper">
                             <i class="devicon-react-original leng-icon"></i>
@@ -105,6 +115,7 @@ export default function Profile(props) {
                             <i class="devicon-chrome-plain leng-icon"></i>
                         </div>  
                     </div> 
+                </BounceInRight>
                 </div>
             </div>
             <div className="profile-background"></div>

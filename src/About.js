@@ -4,6 +4,7 @@ import AboutAnimate from './AboutAnimate'
 // import MyPic from './MyPic'
 import styled, { keyframes } from 'styled-components'
 import {fadeInLeft} from 'react-animations'
+import {fadeInRight} from 'react-animations'
 import {flash} from 'react-animations'
 import {bounceInLeft} from 'react-animations'
 import Typical from 'react-typical'
@@ -13,9 +14,8 @@ import {
 } from 'react-router-dom'
 
 
-
-
 const FadeIn = styled.div`animation: 2s ${keyframes`${fadeInLeft}`}`
+const FadeInR = styled.div`animation: 2s ${keyframes`${fadeInRight}`}`
 const BounceInLeft = styled.div`animation: ${props => props.delay}s ${keyframes`${bounceInLeft}`}`
 const Flash = styled.div`animation: 4s ${keyframes`${flash}`} infinite`
 
@@ -56,10 +56,10 @@ function About(){
                             </FadeIn>  
                         </div>
                     <div className="about-intro-navigation">
-                        <Link to="/profile">{getLinkElement('Profile', 1.25)}</Link>
-                        <Link to="/portfolio">{getLinkElement('Project portfolio', 2)}</Link>
-                        <Link to="/play">{getLinkElement('Play while I play', 2.25)}</Link>
-                        <Link to="/contact">{getLinkElement('Get in touch', 2.50)}</Link>
+                        <Link className="router-link" to="/profile">{getLinkElement('Profile', 1.25)}</Link>
+                        <Link className="router-link" to="/portfolio">{getLinkElement('Project portfolio', 2)}</Link>
+                        {/* <Link className="router-link" to="/play">{getLinkElement('Play while I play', 2.25)}</Link> */}
+                        <Link className="router-link" to="/contact">{getLinkElement('Get in touch', 2.50)}</Link>
                         
                         {/* {getLinkElement('A kaleidoscopic journey @ work', 1.5)}
                         {getLinkElement('Education and Life lessons', 1.75)} */}
@@ -69,10 +69,12 @@ function About(){
                     </div>
                 </div>
             </main>
+            <FadeInR>
             <aside className='about-animation-container'>
                 {/* <MyPic /> */}
-                <AboutAnimate />
+                  <AboutAnimate />  
             </aside>
+            </FadeInR>
         </div>
     )
 }

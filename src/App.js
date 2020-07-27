@@ -29,9 +29,9 @@ function App() {
           <Route path="/portfolio">
             <Portfolio />
           </Route>
-          <Route path="/play">
+          {/* <Route path="/play">
             <Play />
-          </Route>
+          </Route> */}
           <Route path="/contact">
             <Contact />
           </Route>

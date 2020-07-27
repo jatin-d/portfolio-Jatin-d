@@ -2,18 +2,25 @@ import React from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './Portfolio.css'
 import { Carousel } from 'react-responsive-carousel';
+import styled, { keyframes } from 'styled-components'
+import {bounceInLeft} from 'react-animations'
+import {bounceInRight} from 'react-animations'
 
 
-
+const BounceInLeft = styled.div`animation: 2s ${keyframes`${bounceInLeft}`}`
+const BounceInRight = styled.div`animation: 2s ${keyframes`${bounceInRight}`}`
 
 export default function Portfolio(){
     return(
         <div className="portfolio-container">
             <div className="portfolio-wrapper">
+                <BounceInLeft>
                 <div className="portfolio-text-wrapper">
                     <h6 className='portfolio-heading'>Check Out My Work</h6>
                     <p className="portfolio-text">While learning development skills, I tried to capture every learning and attempted to craft them in form of a project. Following are my projects replicating my journey so far and going...</p> 
                 </div>
+                </BounceInLeft>
+                <BounceInRight>
                 <div className="portfolio-grid">
                     <div className="portfolio-item-container">
                         <div className="portfolio-item-overlay">
@@ -76,6 +83,7 @@ export default function Portfolio(){
                         <img className='portfolio-item-img' src="planets.png" alt="planets cover"/>
                     </div>
                 </div>
+                </BounceInRight>
                 <div className="portfolio-mobile-view">
                     <Carousel 
                         autoPlay

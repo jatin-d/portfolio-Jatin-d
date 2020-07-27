@@ -32,8 +32,6 @@
 
 
 
-
-
 .portfolio-grid{
     padding: 20px;
     display: grid;
@@ -86,6 +84,7 @@
     overflow: hidden;
     display: flex;
     flex-flow: column;
+    align-items: center;
     justify-content: center;
 }
 .portfolio-item-container:hover .portfolio-item-overlay{
@@ -99,11 +98,12 @@
 }
 
 .portfolio-item-heading{
-    font-size: 30px;
+    font-size: 25px;
     color: black;
     margin: 0;
 }
 .portfolio-item-text{
+    text-align: center;
     font-size: 20px;
     padding: 5px;
     color: black;
@@ -113,6 +113,11 @@
     color: black;
     font-size: 20px;
     font-weight: 900;
+    transition: all 0.3s ease;
+    padding: 5px;
+}
+.portfolio-demo-link:hover{
+    border-bottom: 2px solid rgb(25, 25, 254);
 }
 .carousel .slide{
     background-color: white;
