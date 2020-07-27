@@ -1,7 +1,7 @@
 import React from 'react'
 import './About.css'
 import AboutAnimate from './AboutAnimate'
-import MyPic from './MyPic'
+// import MyPic from './MyPic'
 import styled, { keyframes } from 'styled-components'
 import {fadeInLeft} from 'react-animations'
 import {flash} from 'react-animations'
