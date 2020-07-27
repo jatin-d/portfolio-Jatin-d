@@ -5,7 +5,7 @@ import Header from "./Header"
 import About from "./About"
 import Profile from "./Profile"
 import Portfolio from "./Portfolio"
-import Play from "./Play"
+// import Play from "./Play"
 import Contact from "./Contact"
 import Footer from "./Footer"
 import {
