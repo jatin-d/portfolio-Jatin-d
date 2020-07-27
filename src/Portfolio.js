@@ -28,12 +28,12 @@ export default function Portfolio(){
                     <div className="portfolio-item-container">
                         <div className="portfolio-item-overlay">
                             <div className='portfolio-item-overlay-content-wrapper'>
-                                 <h6 className="portfolio-item-heading">Poll To Pass</h6>
+                                <h6 className="portfolio-item-heading">Poll To Pass</h6>
                                 <p className="portfolio-item-text">A web-based platform to post polls. Developed using HTML5, and CSS for front-end and Ruby with Sinatra for the back-end.</p>
                                 <a className='portfolio-demo-link' href="https://poll-to-pass-api.herokuapp.com/">DEMO</a>
                             </div>  
                         </div>
-                        <img src="polltopass.png" alt="poll-to-pass cover"/>
+                        <img className='portfolio-item-img' src="polltopass.png" alt="poll-to-pass cover"/>
                     </div>
                     <div className="portfolio-item-container">
                         <div className="portfolio-item-overlay">
@@ -43,7 +43,7 @@ export default function Portfolio(){
                                 <a className='portfolio-demo-link' href="https://magic-melbourne-moments.herokuapp.com/">DEMO</a>
                             </div>
                         </div>
-                        <img src="common-utils.png" alt="common-utils cover"/>
+                        <img className='portfolio-item-img' src="common-utils.png" alt="common-utils cover"/>
                     </div>
                     <div className="portfolio-item-container">
                         <div className="portfolio-item-overlay">
@@ -53,7 +53,7 @@ export default function Portfolio(){
                                 <a className='portfolio-demo-link' href="https://magic-melbourne-moments.herokuapp.com/">DEMO</a>
                             </div>
                         </div>
-                        <img src="magicmelb.png" alt="magic-melbourne cover"/>
+                        <img className='portfolio-item-img' src="magicmelb.png" alt="magic-melbourne cover"/>
                     </div>
                     <div className="portfolio-item-container">
                         <div className="portfolio-item-overlay">
@@ -63,7 +63,7 @@ export default function Portfolio(){
                                 <a className='portfolio-demo-link' href="https://magic-melbourne-moments.herokuapp.com/">DEMO</a>
                             </div>
                         </div>
-                        <img src="portfolio-jatin.png" alt="portfolio cover"/>
+                        <img className='portfolio-item-img' src="portfolio-jatin.png" alt="portfolio cover"/>
                     </div>
                     <div className="portfolio-item-container">
                         <div className="portfolio-item-overlay">
@@ -73,7 +73,7 @@ export default function Portfolio(){
                                 <a className='portfolio-demo-link' href="https://damp-waters-88377.herokuapp.com/">DEMO</a>
                             </div>
                         </div>
-                        <img src="planets.png" alt="planets cover"/>
+                        <img className='portfolio-item-img' src="planets.png" alt="planets cover"/>
                     </div>
                 </div>
 
@@ -82,7 +82,12 @@ export default function Portfolio(){
 
 
 
-                <Carousel className="portfolio-grid-carousal">
+                <Carousel 
+                    showArrows={false} 
+                    showStatus={false} 
+                    showIndicators={false}
+                    showThumbs={false}
+                    className="portfolio-grid-carousal">
                     <div className="portfolio-item-container">
                         <div className="portfolio-item-overlay">
                             <div className='portfolio-item-overlay-content-wrapper'>

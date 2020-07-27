@@ -1,11 +1,3 @@
-/* .portfolio-container{
-    position: relative;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
 .portfolio-wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -44,45 +36,53 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin: 0;
-    grid-gap: 15px;
+    margin-right: 20px;
+    grid-gap: 20px;
     height: fit-content;
 }
 .portfolio-item-container{
     border-radius: 10px;
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
     background-color: rgb(195, 195, 195);
     display: flex;
     align-items: center;
     position: relative;
 }
 .portfolio-item-container img{
-    border: 2px solid black;
+    border: 0.7px solid black;
     border-radius: 10px;
     position: relative;
     z-index: 1;
     width: 100%;
     height: 100%;
 }
+.portfolio-item-img{
+    opacity: 0.5;
+}
+
 .portfolio-item-overlay{
     position: absolute;
     z-index: 2;
     width: 0;
     height: 100%;
     right: 100%;
-    background: rgba(128, 128, 128, 0.9);
+    background: rgba(254, 177, 82, 0.9);
     border-radius: 10px;
-    transition: 0.5s ease;
-}
+    transition: 0.7s ease;
+}   
 .portfolio-item-overlay-content-wrapper{
-    position: absolute;
+    /* position: absolute; */
     z-index: 2;
     width: 0;
     height: 100%;
     right: 100%;
+    transition: 0.7s ease;
     border-radius: 10px;
-    transition: 0.5s ease;
     overflow: hidden;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
 }
 .portfolio-item-container:hover .portfolio-item-overlay{
     width: 100%;
@@ -95,19 +95,25 @@
 }
 
 .portfolio-item-heading{
-    font-size: 15px;
-    color: white;
+    font-size: 30px;
+    color: black;
     margin: 0;
 }
 .portfolio-item-text{
-    font-size: 10px;
+    font-size: 20px;
     padding: 5px;
-    color: white;
+    color: black;
 }
 .portfolio-demo-link{
-    color: white;
-    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 900;
 }
+
+
+
+
 
 .carousel-root{
     display: none;
@@ -124,14 +130,15 @@
     }
 
 
-
-
-    .portfolio-grid{
+    .portfolio-wrapper{
         grid-template-columns: none;
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: 1fr 1fr;
     }
     .carousel-root{
-        display: block;
+        display: flex;
+        flex-flow: column;
+        align-items: center;        
+        width: 100vw;
     }
     .portfolio-grid{
         display: none;
