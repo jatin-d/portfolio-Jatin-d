@@ -92,10 +92,19 @@
     left: 0;
     z-index: -100;
 }
+.carousel-root{
+    display: none;
+}
 
 @media (max-width:768px){
     .portfolio-grid{
         grid-template-columns: none;
         grid-template-rows: repeat(6, 1fr);
+    }
+    .carousel-root{
+        display: block;
+    }
+    .portfolio-grid{
+        display: none;
     }
 }

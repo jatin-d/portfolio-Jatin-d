@@ -10,18 +10,31 @@
     flex-flow: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 20px;
+    margin-left: 150px;
 }
 .contactForm-heading{
-    font-size: 20px;
+    font-size: 30px;
     text-align: left;
     margin: 0;
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 20px;
 }
 .contactForm-text{
     text-align: left;
     margin: 0;
+    font-size: 20px;
+}
+.contactForm-social{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.contactForm-social-link{
+    font-size: 40px;
+    color: gray;
+    margin-right: 40px;
 }
 
 
@@ -33,14 +46,16 @@
     text-align: start;
 }
 .contactForm-label{
+    font-size: 20px;
     display: block;
     padding: 10px;
     padding-bottom: 2px;
 }
 .contactForm-input{
     display: block;
+    font-size: 20px;
     margin: 10px;
-    padding: 8px;
+    padding: 10px;
     border: none;
     border-bottom: 0.9px solid rgba(181, 181, 181, 0.9);
     background: rgb(236, 236, 236);
@@ -55,11 +70,13 @@
     border: none;
     background-color: rgb(239, 164, 72);
     border-radius: 3px;
-    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    padding: 10px;
 }
 .contactForm-submit-button:hover{
     box-shadow: 0 0 1px 1px rgb(155, 223, 255),
         0 0 1px 2px rgb(221, 169, 255)
+
 }
 .contactForm-input-textArea{
     height: 100px;

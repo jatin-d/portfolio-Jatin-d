@@ -31,13 +31,35 @@ class ContactForm extends React.Component{
         return (
             <div className="contactForm-wrapper">
                 <div className="contact-textContainer">
-                     <h6 className='contactForm-heading'>Drop me a line</h6>
+                    <h6 className='contactForm-heading'>Drop me a line</h6>
                     <p className='contactForm-text'>
                         I am always excited to interact with people, know their story and tell them mine and make long-lasting connections. <em>Drop me few words..!</em>
                     </p>
+                    <h6 className='contactForm-heading'>Or find me on internet</h6>
+                    <div className="contactForm-social">
+                        <a style={{display: "table-cell"}} 
+                        href="https://www.linkedin.com/in/jatin-d"
+                        rel="noopener noreferrer"
+                        target='_blank'
+                        className='contactForm-social-link' ><i className="fab fa-linkedin"></i></a>
+                        
+                        <a style={{display: "table-cell"}} 
+                        href="https://github.com/jatin-d"
+                        rel="noopener noreferrer"
+                        target='_blank'
+                        className='contactForm-social-link' ><i className="fab fa-github-square"></i></a>
+                        
+                        <a style={{display: "table-cell"}} 
+                        href="https://medium.com/@jatin.dhandhalya"
+                        rel="noopener noreferrer"
+                        target='_blank'
+                        className='contactForm-social-link'><i 
+                        className="fab fa-medium"></i></a>
+                    </div> 
+
                 </div>
                 <form className="contactForm-formContainer" noValidate autoComplete="off" onSubmit={this.handleSubmit} action="">
-                    <label className='contactForm-label'>Name</label>
+                    <label className='contactForm-label'>Your name</label>
                     <input 
                         id="outlined-name"
                         className='contactForm-input'
@@ -45,7 +67,7 @@ class ContactForm extends React.Component{
                         value={this.state.name}
                         onChange={this.handleChange}
                     />
-                    <label className='contactForm-label'>e-mail</label>
+                    <label className='contactForm-label'>Your e-mail</label>
                     <input 
                         id="outlined-email-input"
                         className='contactForm-input'
@@ -55,7 +77,7 @@ class ContactForm extends React.Component{
                         value={this.state.email}
                         onChange={this.handleChange}
                     />
-                    <label className='contactForm-label'>Message</label>
+                    <label className='contactForm-label'>Your message</label>
                     <input 
                         id="outlined-textarea"
                         className='contactForm-input contactForm-input-textArea'

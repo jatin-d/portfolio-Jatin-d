@@ -5,7 +5,6 @@
     margin: 0;
     margin-left: 20px;
     padding-left: 3px;
-    font-family: 'Architects Daughter', cursive;
     font-size: 30px;
     text-align: left;
     color: rgb(255, 219, 140);
@@ -15,7 +14,6 @@
     width: 100%;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    /* font-family: 'Monda', sans-serif; */
     background: linear-gradient(0.25turn, #808080, rgb(204, 204, 204));
     z-index: 999;
 }
