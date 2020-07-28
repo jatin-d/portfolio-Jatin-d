@@ -21,7 +21,7 @@ export default function Education(props) {
                             <p className='education-title-text'>2020</p> 
                         </div>
                         <div className="education-title-container">
-                            <h6 className='education-sub-heading'>Learn figma | UI/UX design essential training</h6>
+                            <h6 className='education-sub-heading'>Learn figma | UI/UX design essential</h6>
                             <p className='education-title-text'>Udemy</p> 
                             <p className='education-title-text'>2018</p> 
                         </div>

@@ -52,6 +52,23 @@
 }
 
 @media (max-width:768px){
-    
+    .education-container{
+        padding-top: 30px;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+    }
+    .education-heading{
+        padding: 0;
+        padding-top: 30px;
+    }
+    .education-text-left-container{
+        margin-left: 20px;
+    } 
+    .education-description-right-wrapper{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .education-title-wrapper{
+        padding: 0;  
+    }
 }
-

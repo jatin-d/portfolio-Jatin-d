@@ -16,17 +16,17 @@ export default function Experience(props) {
                     <h6 className="experience-heading">Experience</h6>
                     <div className="experience-title-wrapper">
                         <div className="experience-title-container">
-                            <h6 className='experience-sub-heading'>Software Engineering Immersive | Trainee  <i class="far fa-arrow-alt-circle-right"></i></h6>
+                            <h6 className='experience-sub-heading'>Software Engineering Immersive <i class="far fa-arrow-alt-circle-right"></i></h6>
                             <p className="experience-title-text">General Assembly Melbourne</p> 
                             <p className='experience-title-text'>Mar-2020 to June-2020</p> 
                         </div>
                         <div className="experience-title-container">
-                            <h6 className='experience-sub-heading'>Business Manager | Retail team leader  <i class="far fa-arrow-alt-circle-right"></i></h6>
+                            <h6 className='experience-sub-heading'>Manager | Retail team leader  <i class="far fa-arrow-alt-circle-right"></i></h6>
                             <p className='experience-title-text'>7-Eleven Australia</p> 
                             <p className='experience-title-text'>2017 to 2020</p> 
                         </div>
                         <div className="experience-title-container">
-                            <h6 className='experience-sub-heading'>Mechanical Engineer ⎪ Project Engineer  <i class="far fa-arrow-alt-circle-right"></i></h6>
+                            <h6 className='experience-sub-heading'>Project Engineer | Mechanical  <i class="far fa-arrow-alt-circle-right"></i></h6>
                             <p className='experience-title-text'>Larsen & Toubro Ltd</p> 
                             <p className='experience-title-text'>2010 - 2017</p> 
                         </div>
