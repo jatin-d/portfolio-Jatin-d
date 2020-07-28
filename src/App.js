@@ -8,6 +8,8 @@ import Portfolio from "./Portfolio"
 // import Play from "./Play"
 import Contact from "./Contact"
 import Footer from "./Footer"
+import Experience from "./Experience"
+import Education from "./Education"
 import {
   BrowserRouter,
   Switch,
@@ -29,6 +31,12 @@ function App() {
           <Route path="/portfolio">
             <Portfolio />
           </Route>
+          <Route path="/experience">
+            <Experience />
+          </Route>
+          <Route path="/education">
+            <Education />
+          </Route>
           {/* <Route path="/play">
             <Play />
           </Route> */}
@@ -41,6 +49,8 @@ function App() {
         </Switch>
         <Footer />
       </BrowserRouter>
+      
+      
     </main>
   )
 }

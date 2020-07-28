@@ -1,63 +1,57 @@
+*{
+    box-sizing: border-box;
+}
 .experience-container{
-    position: relative;
     height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.experience-text-left-container{
+    width: 100%;
     display: flex;
-    align-items: center;
+    flex-flow: column;
+    margin-left: 150px;
 }
-.resume-experience-heading{
-    text-align: center;
-}
-.resume-experience{
-    display: grid;
-    margin: 0 auto;
-    width: 60%;
-    align-items: center;
-    text-align: left;
-    height: fit-content;
-}
-.resume-experience-ga, .resume-experience-se, .resume-experience-lt{
-    display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
-    margin-bottom: 10px;
-    align-items: center;
-}
-.resume-text{
+.experience-heading{
     margin: 0;
-    font-size: 10px;
-    text-align: justify;
+    font-size: 40px;
+    padding: 20px;
 }
-.resume-internal-heading{
+.experience-title-wrapper{
+    padding: 20px;  
+}
+.experience-title-container{
+    padding-top: 20px;  
+}
+.experience-title-text{
     margin: 0;
+    padding-top: 20px;
+    font-size: 18px;
+    color: rgb(73, 73, 73);
 }
-.res-exp-se-symbol, .res-exp-ga-symbol, .res-exp-lt-symbol{
-    text-align: center;
+.experience-text{
+    margin: 0;
+    padding-top: 20px;
     font-size: 20px;
 }
-.experience-background{
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(197, 197, 197);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -100;
+.experience-sub-heading{
+    margin: 0;
+    padding-top: 20px;
+    font-size: 20px;
 }
-.exp-icon{
-    font-size: 25px;
-    color: rgb(90, 120, 255);
-    transition: all 0.3s ease-in-out;
-    text-align: center;
-}
-.exp-icon:hover{
-    transform: scale(1.1);
-    color: rgb(250, 24, 80);
-    text-shadow: 1px 1px 2px rgb(116, 99, 101);
+
+
+
+.experience-description-right-wrapper{
+    border: 1px solid rgba(254, 177, 82, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 50px;
+    margin-right: 100px;
 }
 
 @media (max-width:768px){
-    .resume-experience-ga, .resume-experience-se, .resume-experience-lt{
-        grid-template-columns: none;
-        grid-template-rows:2fr 1fr 2fr;
-    }
+    
 }
 

@@ -60,12 +60,6 @@ function About(){
                         <Link className="router-link" to="/portfolio">{getLinkElement('Project portfolio', 2)}</Link>
                         {/* <Link className="router-link" to="/play">{getLinkElement('Play while I play', 2.25)}</Link> */}
                         <Link className="router-link" to="/contact">{getLinkElement('Get in touch', 2.50)}</Link>
-                        
-                        {/* {getLinkElement('A kaleidoscopic journey @ work', 1.5)}
-                        {getLinkElement('Education and Life lessons', 1.75)} */}
-                        
-                        
-                        
                     </div>
                 </div>
             </main>
