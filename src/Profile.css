@@ -26,6 +26,14 @@
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.profile-links{
+    margin: 0;
+    display: block;    
+    margin-left: 150px;
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 .profile-skills-heading{
     margin: 0;
     font-size: 30px;
@@ -93,10 +101,22 @@
         padding: 10px;
     }
     .profile-text{
-        padding: 20px;
-        margin-left: 0;
+        margin: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 10px;
         font-size: 18px;
     }
+    .profile-text p{
+        margin: 0;
+    }
+    .profile-links{  
+        margin-left: 10px;
+        padding: 10px;
+        font-size: 20px;
+        font-weight: 900;
+    }
+    
     .profile-skills-heading{
         padding: 10px;
         font-size: 25px;

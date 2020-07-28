@@ -35,4 +35,7 @@
         justify-items: center;
         align-items: center;
     }
+    .footer-nav{
+        margin: 0 auto;
+    }
 }

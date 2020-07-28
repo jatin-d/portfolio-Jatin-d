@@ -3,6 +3,10 @@ import './Profile.css';
 import styled, { keyframes } from 'styled-components'
 import {bounceInLeft} from 'react-animations'
 import {bounceInRight} from 'react-animations'
+import { 
+    Link,
+    // Redirect,
+} from 'react-router-dom'
 
 
 const BounceInLeft = styled.div`animation: 2s ${keyframes`${bounceInLeft}`}`
@@ -17,8 +21,9 @@ export default function Profile(props) {
                 <div className="profile-section-container">
                     <h6 className="profile-heading">Profile and prowesses</h6>
                     <div className="profile-text"> 
-                        <p>A graduate in Software Engineering Immersive Boot-camp from General Assembly - Melbourne. A seasoned professional having several years of experience in collaborating with multiple teams across the globe. A mechanical engineer who ensure quality product delivery while meeting project timelines and maintaining good team health.</p> 
+                        <p>An aspiring full-stack developer. Experienced working in project teams globally. A mechanical engineer. Believes in quality product delivered on time. Loves to create and make things work.</p> 
                     </div>
+                   
                     <h6 className="profile-skills-heading">I can work with...</h6>
                     <div className="profile-skills-list">
                         <div>
@@ -45,6 +50,10 @@ export default function Profile(props) {
                             <p className="profile-skills-list-items">GitHub</p>
                             <p className="profile-skills-list-items">Heroku</p>
                         </div>
+                    </div>
+                    <div className="profile-link-wrapper">
+                        <Link className="router-link profile-links" to="/experience">Know more about experience <i class="far fa-arrow-alt-circle-right"></i></Link>
+                        <Link className="router-link profile-links" to="/education">Know more about eduction <i class="far fa-arrow-alt-circle-right"></i></Link>
                     </div>
                 </div>
                 </BounceInLeft>

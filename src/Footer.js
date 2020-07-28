@@ -11,6 +11,5 @@ export default function Footer(){
                 <a className='footer-link' href="#medium"><i className="fab fa-medium"></i></a>
             </nav>  
         </footer>
-        
     )
 }

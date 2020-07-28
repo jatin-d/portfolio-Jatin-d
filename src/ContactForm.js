@@ -39,7 +39,7 @@ class ContactForm extends React.Component{
     render() {
         return (
             <div className="contactForm-wrapper">
-                <BounceInLeft>
+                <BounceInLeft className="contact-textContainer-bounce">
                 <div className="contact-textContainer">
                     <h6 className='contactForm-heading'>Drop me a line</h6>
                     <p className='contactForm-text'>
@@ -78,7 +78,7 @@ class ContactForm extends React.Component{
                     ><i class="fas fa-file-download"></i> Resume</a>
                 </div>
                 </BounceInLeft>
-                <BounceInRight>
+                <BounceInRight className="contactForm-formContainer-bounce">
                 <form className="contactForm-formContainer" noValidate autoComplete="off" onSubmit={this.handleSubmit} action="">
                     <label className='contactForm-label'>Your name</label>
                     <input 
