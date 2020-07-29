@@ -22,48 +22,58 @@ import {
 
 
 
-function App() {
-  return (
-    <main className="about-text">
-      <BrowserRouter>
-        <Header />
-        <Switch>
-          <Route path="/profile">
-            <Profile />
-          </Route>
-          <Route path="/portfolio">
-            <Portfolio />
-          </Route>
-          <Route path="/experience">
-            <Experience />
-          </Route>
-          <Route path="/experience/ga">
-            <ExpGA />
-          </Route>
-          <Route path="/experience/se">
-            <ExpSE />
-          </Route>
-          <Route path="/experience/lt">
-            <ExpLT />
-          </Route>
-          <Route path="/education">
-            <Education />
-          </Route>
-          {/* <Route path="/play">
-            <Play />
-          </Route> */}
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/">
-            <About />
-          </Route>
-        </Switch>
-        <Footer />
-      </BrowserRouter>
-      
-      
-    </main>
-  )
+class App extends React.Component{
+  state = {
+    target: ""
+  }
+  render(){
+    return (
+      <main className="about-text">
+        <BrowserRouter>
+            <Header />
+            <Switch>
+              <Route path="/" exact>
+                <About />
+              </Route>
+              <Route path="/profile">
+                <Profile />
+              </Route>
+              <Route path="/portfolio">
+                <Portfolio />
+              </Route>
+              <Route path="/experience">
+                <Experience />
+              </Route>
+              <Route path="/experience/ga">
+                <ExpGA />
+              </Route>
+              <Route path="/experience/se">
+                <ExpSE />
+              </Route>
+              <Route path="/experience/lt">
+                <ExpLT />
+              </Route>
+              <Route path="/education">
+                <Education />
+              </Route>
+              <Route path="/:target">
+                <About />
+              </Route>
+              {/* <Route path="/play">
+                <Play />
+              </Route> */}
+              <Route path="/contact">
+                <Contact />
+              </Route>
+              <Route path="/">
+                <About />
+              </Route>
+            </Switch>
+            <Footer />
+        </BrowserRouter>
+      </main>
+    )
+  }
+  
 }
 export default App
