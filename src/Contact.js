@@ -57,13 +57,13 @@ export default class Contact extends React.Component{
                     <div class="mailer-anim-container">
                     {this.state.isLoading ? (
                         <div className="anim-sending-wrapper">
-                           <h6>Sending</h6>
-                            <Lottie options={defaultOptions} height={120} width={120} /> 
+                            <h6>Sending</h6>
+                            <Lottie options={defaultOptions} height={200} width={200} /> 
                         </div>
                     ) : (
                         <div className="anim-sent-wrapper">
-                            <h6>Sent</h6>
-                            <Lottie options={defaultOptions2} height={120} width={120} />
+                            <h6>Sent successfully</h6>
+                            <Lottie options={defaultOptions2} height={200} width={200} />
                             <h6>Thank you..!</h6>
                         </div>
                     )}

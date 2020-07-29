@@ -5,4 +5,12 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto; 
-}   
+}
+.mailer-anim-container{
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}

@@ -17,18 +17,18 @@ export default function Experience(props) {
                     <div className="experience-title-wrapper">
                         {/* <Link to="/experience/ga"> */}
                             <div className="experience-title-container">
-                                <h6 className='experience-sub-heading'>Software Engineering Immersive <i class="far fa-arrow-alt-circle-right"></i></h6>
+                                <h6 className='experience-sub-heading'>Software Engineering Immersive <i className="far fa-arrow-alt-circle-right"></i></h6>
                                 <p className="experience-title-text">General Assembly Melbourne</p> 
                                 <p className='experience-title-text'>Mar-2020 to June-2020</p> 
                             </div>
                         {/* </Link> */}
                         <div className="experience-title-container">
-                            <h6 className='experience-sub-heading'>Manager | Retail team leader  <i class="far fa-arrow-alt-circle-right"></i></h6>
+                            <h6 className='experience-sub-heading'>Manager | Retail team leader  <i className="far fa-arrow-alt-circle-right"></i></h6>
                             <p className='experience-title-text'>7-Eleven Australia</p> 
                             <p className='experience-title-text'>2017 to 2020</p> 
                         </div>
                         <div className="experience-title-container">
-                            <h6 className='experience-sub-heading'>Project Engineer | Mechanical  <i class="far fa-arrow-alt-circle-right"></i></h6>
+                            <h6 className='experience-sub-heading'>Project Engineer | Mechanical  <i className="faNamer fa-arrow-alt-circle-right"></i></h6>
                             <p className='experience-title-text'>Larsen & Toubro Ltd</p> 
                             <p className='experience-title-text'>2010 - 2017</p> 
                         </div>
