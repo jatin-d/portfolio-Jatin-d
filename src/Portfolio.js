@@ -119,7 +119,7 @@ export default function Portfolio(){
                                 <div className="portfolio-item-overlay">
                                     <div className='portfolio-item-overlay-content-wrapper'>
                                         <h6 className="portfolio-item-heading">Common utils</h6>
-                                        <p className="portfolio-item-text">A web app for shared utility items such as to-do list, calendar, reminders etc. A React application including server side on NodeJS and database on PostgreSQL</p>
+                                        <p className="portfolio-item-text">A React application for common utilities having server side on NodeJS and database on PostgreSQL.</p>
                                         <a className='portfolio-demo-link' href="https://magic-melbourne-moments.herokuapp.com/">DEMO</a>
                                     </div>
                                 </div>
@@ -139,7 +139,7 @@ export default function Portfolio(){
                                 <div className="portfolio-item-overlay">
                                     <div className='portfolio-item-overlay-content-wrapper'>
                                         <h6 className="portfolio-item-heading">Portfolio Website</h6>
-                                        <p className="portfolio-item-text">My own portfolio website created using ReactJS. An animation that continuously updates is created by in React and I intend to update it time to time to create different shapes</p>
+                                        <p className="portfolio-item-text">My portfolio website created using ReactJS.</p>
                                         <a className='portfolio-demo-link' href="https://magic-melbourne-moments.herokuapp.com/">DEMO</a>
                                     </div>
                                 </div>
@@ -149,7 +149,7 @@ export default function Portfolio(){
                                 <div className="portfolio-item-overlay">
                                     <div className='portfolio-item-overlay-content-wrapper'>
                                         <h6 className="portfolio-item-heading">Planets</h6>
-                                        <p className="portfolio-item-text">A fun web page created using Ruby and Sinatra. Its a CRUD app implementing database in Postgre SQL. This little project was created using MVC principle in Ruby platform</p>
+                                        <p className="portfolio-item-text">A fun web page created using Ruby and Sinatra. A CRUD app implementation using MVC principle.</p>
                                         <a className='portfolio-demo-link' href="https://damp-waters-88377.herokuapp.com/">DEMO</a>
                                     </div>
                                 </div>
