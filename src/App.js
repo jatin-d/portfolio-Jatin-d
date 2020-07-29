@@ -56,15 +56,16 @@ class App extends React.Component{
               <Route path="/education">
                 <Education />
               </Route>
+              <Route path="/contact">
+                <Contact />
+              </Route>
               <Route path="/:target">
                 <About />
               </Route>
               {/* <Route path="/play">
                 <Play />
               </Route> */}
-              <Route path="/contact">
-                <Contact />
-              </Route>
+              
               <Route path="/">
                 <About />
               </Route>
