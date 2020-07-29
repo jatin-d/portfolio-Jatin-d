@@ -52,8 +52,8 @@ export default function Profile(props) {
                         </div>
                     </div>
                     <div className="profile-link-wrapper">
-                        <Link className="router-link profile-links" to="/experience">Know more about experience <i class="far fa-arrow-alt-circle-right"></i></Link>
-                        <Link className="router-link profile-links" to="/education">Know more about eduction <i class="far fa-arrow-alt-circle-right"></i></Link>
+                        <Link className="router-link profile-links" to="/experience">Know more about experience <i className="far fa-arrow-alt-circle-right"></i></Link>
+                        <Link className="router-link profile-links" to="/education">Know more about eduction <i className="far fa-arrow-alt-circle-right"></i></Link>
                     </div>
                 </div>
                 </BounceInLeft>
@@ -62,66 +62,66 @@ export default function Profile(props) {
                 
                 <div className="profile-skills-icons-wrapper">   
                 <BounceInRight>  
-                    <div class="skill-icon-container">
+                    <div className="skill-icon-container">
                         <div className="skil-icon-wrapper">
-                            <i class="devicon-react-original leng-icon"></i>
+                            <i className="devicon-react-original leng-icon"></i>
                         </div>
                         <div className="skil-icon-wrapper">
-                            <i class="devicon-nodejs-plain leng-icon"></i>
+                            <i className="devicon-nodejs-plain leng-icon"></i>
                         </div>
                         <div className="skil-icon-wrapper">
-                            <i class="devicon-javascript-plain leng-icon"></i>
+                            <i className="devicon-javascript-plain leng-icon"></i>
                         </div>
                         <div className="skil-icon-wrapper">
-                            <i class="devicon-ruby-plain leng-icon"></i>
+                            <i className="devicon-ruby-plain leng-icon"></i>
                         </div>
                         <div className="skil-icon-wrapper">
-                            <i class="devicon-html5-plain leng-icon"></i>
+                            <i className="devicon-html5-plain leng-icon"></i>
                         </div>
                         <div className="skil-icon-wrapper">
-                            <i class="devicon-css3-plain leng-icon"></i>
+                            <i className="devicon-css3-plain leng-icon"></i>
                         </div>
                         <div className="skil-icon-wrapper">
-                            <i class="devicon-jquery-plain leng-icon"></i>
+                            <i className="devicon-jquery-plain leng-icon"></i>
                         </div>
                         <div className="skil-icon-wrapper">
-                            <i class="devicon-postgresql-plain leng-icon"></i>
+                            <i className="devicon-postgresql-plain leng-icon"></i>
                         </div>
                         <div className="skil-icon-wrapper">
-                            <i class="devicon-bootstrap-plain leng-icon"></i>
+                            <i className="devicon-bootstrap-plain leng-icon"></i>
                         </div>
                         <div className="skil-icon-wrapper">
-                            <i class="devicon-express-original leng-icon"></i>
+                            <i className="devicon-express-original leng-icon"></i>
                         </div>
                         <div className="skil-icon-wrapper">
-                            <i class="devicon-visualstudio-plain leng-icon"></i>
+                            <i className="devicon-visualstudio-plain leng-icon"></i>
                         </div>
                         <div className="skil-icon-wrapper">
-                            <i class="devicon-git-plain leng-icon"></i>
+                            <i className="devicon-git-plain leng-icon"></i>
                         </div>
                         <div className="skil-icon-wrapper">
-                            <i class="devicon-github-plain leng-icon"></i>
+                            <i className="devicon-github-plain leng-icon"></i>
                         </div>
                         <div className="skil-icon-wrapper">
-                            <i class="devicon-gitlab-plain leng-icon"></i>
+                            <i className="devicon-gitlab-plain leng-icon"></i>
                         </div>
                         <div className="skil-icon-wrapper">
-                            <i class="devicon-heroku-plain-wordmark leng-icon"></i>
+                            <i className="devicon-heroku-plain-wordmark leng-icon"></i>
                         </div> 
                         <div className="skil-icon-wrapper">
-                            <i class="devicon-heroku-plain leng-icon"></i>
+                            <i className="devicon-heroku-plain leng-icon"></i>
                         </div>
                         <div className="skil-icon-wrapper">
-                            <i class="devicon-amazonwebservices-original leng-icon"></i>
+                            <i className="devicon-amazonwebservices-original leng-icon"></i>
                         </div>
                         <div className="skil-icon-wrapper">
-                            <i class="devicon-angularjs-plain leng-icon"></i>
+                            <i className="devicon-angularjs-plain leng-icon"></i>
                         </div>
                         <div className="skil-icon-wrapper">
-                            <i class="devicon-wordpress-plain leng-icon"></i>
+                            <i className="devicon-wordpress-plain leng-icon"></i>
                         </div>
                         <div className="skil-icon-wrapper">
-                            <i class="devicon-chrome-plain leng-icon"></i>
+                            <i className="devicon-chrome-plain leng-icon"></i>
                         </div>  
                     </div> 
                 </BounceInRight>

@@ -1,34 +1,59 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './Header.css'
 import Pdf from './Documents/Jatin-d-Resume.pdf';
 import {
-    Link 
+    Link
 } from 'react-router-dom'
 
 
-export default function Header(){
-    // const handleClick = e => {
-
-    // }
-    return(
+export default function Header() {
+    let checkBoxRef = useRef(null);
+    const handleOverlay = e => {
+        checkBoxRef.current.checked = !checkBoxRef.current.checked;
+    }
+    return (
         <header className="fixed-header">
             <Link className="router-link" to="/"><h6 className='logo'>Jatin.D</h6></Link>
-            
-            <nav id="main-header-nav">
-                <Link className="router-link" to="/">
-                <a href="#projects">Home</a>
-                </Link>
-                
-                {/* <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a> */}
+            <div className="menu-wrap">
+                <input id="togglerCheckbox" type="checkbox" className='toggler' ref={checkBoxRef}/>
+                <div className="hamburger"><div></div></div>
+                <div className="menu">
+                    <div>
+                        <div>
+                            <ul>
+                                <li><Link onClick={handleOverlay} className="hamburger-router-link" to="/">
+                                    Home
+                                </Link></li>
+                                <li><Link onClick={handleOverlay} className="hamburger-router-link" to="/profile">
+                                    Profile
+                                </Link></li>
+                                <li><Link onClick={handleOverlay} className="hamburger-router-link" to="/portfolio">
+                                    Portfolio
+                                </Link></li>
+                                <li><Link onClick={handleOverlay} className="hamburger-router-link" to="/contact">
+                                    Contact
+                                </Link></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                <a 
-                    style={{display: "table-cell"}} 
+
+
+
+            <nav id="main-header-nav">
+                <Link className="router-link" to="/">Home</Link>
+                <Link className="router-link" to="/profile">Profile</Link>
+                <Link className="router-link" to="/portfolio">Portfolio</Link>
+                <Link className="router-link" to="/contact">Contact</Link>
+                <a
+                    style={{ display: "table-cell" }}
                     href={Pdf}
                     rel="noopener noreferrer"
                     target='_blank'
-                ><i class="fas fa-file-download"></i> Resume</a>
-            </nav>  
+                ><i className="fas fa-file-download"></i> Resume</a>
+            </nav>
         </header>
     )
 }

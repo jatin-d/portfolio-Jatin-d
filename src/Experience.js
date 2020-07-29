@@ -15,11 +15,13 @@ export default function Experience(props) {
                 <BounceInLeft delay={2}>
                     <h6 className="experience-heading">Experience</h6>
                     <div className="experience-title-wrapper">
-                        <div className="experience-title-container">
-                            <h6 className='experience-sub-heading'>Software Engineering Immersive <i class="far fa-arrow-alt-circle-right"></i></h6>
-                            <p className="experience-title-text">General Assembly Melbourne</p> 
-                            <p className='experience-title-text'>Mar-2020 to June-2020</p> 
-                        </div>
+                        {/* <Link to="/experience/ga"> */}
+                            <div className="experience-title-container">
+                                <h6 className='experience-sub-heading'>Software Engineering Immersive <i class="far fa-arrow-alt-circle-right"></i></h6>
+                                <p className="experience-title-text">General Assembly Melbourne</p> 
+                                <p className='experience-title-text'>Mar-2020 to June-2020</p> 
+                            </div>
+                        {/* </Link> */}
                         <div className="experience-title-container">
                             <h6 className='experience-sub-heading'>Manager | Retail team leader  <i class="far fa-arrow-alt-circle-right"></i></h6>
                             <p className='experience-title-text'>7-Eleven Australia</p> 

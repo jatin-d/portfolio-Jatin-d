@@ -75,7 +75,7 @@ class ContactForm extends React.Component{
                     href={Pdf}
                     rel="noopener noreferrer"
                     target='_blank'
-                    ><i class="fas fa-file-download"></i> Resume</a>
+                    ><i className="fas fa-file-download"></i> Resume</a>
                 </div>
                 </BounceInLeft>
                 <BounceInRight className="contactForm-formContainer-bounce">

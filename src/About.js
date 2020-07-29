@@ -51,12 +51,12 @@ function About(){
                             <FadeIn>
                                 <Flash className='intro-instruction'>
                                     <p className='intro-instruction-text'>Click below to know more</p>
-                                    <i class="fas fa-angle-down intro-arrow"></i>
+                                    <i className="fas fa-angle-down intro-arrow"></i>
                                 </Flash>
                             </FadeIn>  
                         </div>
                     <div className="about-intro-navigation">
-                        <Link className="router-link" to="/profile">{getLinkElement('Profile', 1.25)}</Link>
+                        <Link className="router-link" to="/profile">{getLinkElement('Profile', 1.5)}</Link>
                         <Link className="router-link" to="/portfolio">{getLinkElement('Project portfolio', 2)}</Link>
                         {/* <Link className="router-link" to="/play">{getLinkElement('Play while I play', 2.25)}</Link> */}
                         <Link className="router-link" to="/contact">{getLinkElement('Get in touch', 2.50)}</Link>

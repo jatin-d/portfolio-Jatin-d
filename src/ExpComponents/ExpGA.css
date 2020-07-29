@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+.experience-description-wrapper{
+    /* height: 100vh; */
+    display: flex;
+    /* grid-template-columns: 1fr 1fr; */
+    align-items: center;
+}
+
+
+@media (max-width:768px){
+   
+    
+}
+
