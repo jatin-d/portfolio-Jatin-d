@@ -3,6 +3,7 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 40px;
     align-items: center;
+    height: 100vh;
 }
 
 
@@ -62,7 +63,6 @@
     padding: 20px;
     text-align: start;
     margin-right: 100px;
-    width: 100%;
 }
 .contactForm-label{
     font-size: 20px;
