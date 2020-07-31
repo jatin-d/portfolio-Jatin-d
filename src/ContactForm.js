@@ -106,6 +106,8 @@ class ContactForm extends React.Component{
                         value={this.state.multiline}
                         onChange={this.handleChange}
                     />
+                    <div class="g-recaptcha" data-sitekey="6LcIZ7gZAAAAANfa0d2ofx-y-VLD_8rPwG869EfP"></div>
+                    <br/>
                     <button className='contactForm-input contactForm-submit-button' type="submit">Send</button>
                 </form>
                 </BounceInRight>
