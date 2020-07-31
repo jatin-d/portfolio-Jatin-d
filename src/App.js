@@ -19,6 +19,7 @@ import {
   Route,
   // Redirect,
 } from 'react-router-dom'
+import ContactForm from './ContactForm'
 
 
 
@@ -57,7 +58,7 @@ class App extends React.Component{
                 <Education />
               </Route>
               <Route path="/contact">
-                <Contact />
+                <ContactForm />
               </Route>
               <Route path="/:target">
                 <About />
