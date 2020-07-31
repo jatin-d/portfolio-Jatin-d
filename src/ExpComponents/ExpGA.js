@@ -1,10 +1,7 @@
 import React from 'react';
 import './ExpGA.css';
 import styled, { keyframes } from 'styled-components'
-// import {bounceInLeft} from 'react-animations'
 import {bounceInRight} from 'react-animations'
-
-// const BounceInLeft = styled.div`animation: ${props => props.delay}s ${keyframes`${bounceInLeft}`}`
 const BounceInRight = styled.div`animation: ${props => props.delay}s ${keyframes`${bounceInRight}`}`
 
 

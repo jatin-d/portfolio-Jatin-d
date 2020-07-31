@@ -171,37 +171,6 @@ class ContactForm extends React.Component{
                     </form>
                     )}
                 </div>
-                {/* <form className="contactForm-formContainer" noValidate autoComplete="off" onSubmit={this.handleSubmit2} action="">
-                    <label className='contactForm-label'>Your name</label>
-                    <input 
-                        id="outlined-name"
-                        className='contactForm-input'
-                        name="name"
-                        value={this.state.name}
-                        onChange={this.handleChange}
-                    />
-                    <label className='contactForm-label'>Your e-mail</label>
-                    <input 
-                        id="outlined-email-input"
-                        className='contactForm-input'
-                        type="email"
-                        name="email"
-                        autoComplete="email"
-                        value={this.state.email}
-                        onChange={this.handleChange}
-                    />
-                    <label className='contactForm-label'>Your message</label>
-                    <textarea 
-                        id="outlined-textarea"
-                        className='contactForm-input contactForm-input-textArea'
-                        name="multiline"
-                        value={this.state.multiline}
-                        onChange={this.handleChange}
-                    />
-                    <div class="g-recaptcha" data-sitekey="6LcIZ7gZAAAAANfa0d2ofx-y-VLD_8rPwG869EfP"></div>
-                    <br/>
-                    <button className='contactForm-input contactForm-submit-button' type="submit">Send</button>
-                </form> */}
                 </BounceInRight>
             </div>
         )

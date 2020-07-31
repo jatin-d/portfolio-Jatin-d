@@ -19,10 +19,16 @@
     padding: 20px;
 }
 .education-title-wrapper{
-    padding: 20px;  
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: left;
+    width: fit-content;
 }
 .education-title-container{
-    padding-top: 20px;  
+    padding-top: 20px;
+    text-align: left;
+ 
 }
 .education-title-text{
     margin: 0;
@@ -41,6 +47,19 @@
     font-size: 20px;
 }
 
+
+
+
+.education-select-button{
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    font-family: inherit;
+}
+.education-select-button:focus{
+    outline: none;
+}
 
 
 .education-description-right-wrapper{

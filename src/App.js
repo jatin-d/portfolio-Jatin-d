@@ -10,9 +10,7 @@ import Portfolio from "./Portfolio"
 import Footer from "./Footer"
 import Experience from "./Experience"
 import Education from "./Education"
-import ExpGA from './ExpComponents/ExpGA'
-import ExpSE from './ExpComponents/ExpSE'
-import ExpLT from './ExpComponents/ExpLT'
+
 import {
   BrowserRouter,
   Switch,
@@ -44,15 +42,6 @@ class App extends React.Component{
               </Route>
               <Route path="/experience">
                 <Experience />
-              </Route>
-              <Route path="/experience/ga">
-                <ExpGA />
-              </Route>
-              <Route path="/experience/se">
-                <ExpSE />
-              </Route>
-              <Route path="/experience/lt">
-                <ExpLT />
               </Route>
               <Route path="/education">
                 <Education />

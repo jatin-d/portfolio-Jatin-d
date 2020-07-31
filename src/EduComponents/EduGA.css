@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+.education-description-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+
+@media (max-width:768px){
+   
+    
+}
+

@@ -12,8 +12,8 @@ export default function ExpSE(props) {
     return(
         <BounceInRight className="experience-description-wrapper" delay={2}>
             <div >
-                <p className="experience-title-text">General Assembly Melbourne</p> 
-                <p className='experience-text'>An intensive 12-weeks Full-stack Boot camp covering both web development fundamentals and current industry-leading techniques. Learned HTML, CSS, JavaScript, Ruby on Rails, Node.js, PostgreSQL, Sinatra, React.js, jQuery, Bootstrap, underscore.js, postman and many more. Gained more then 700 hours of development experience. Practiced coding for over 600 hours.</p> 
+                <p className='experience-title-text'>7-Eleven Australia</p>
+                <p className='experience-text'>While setting up my feet in Australia, enjoyed meeting new people everyday. Learned culture and people. Led a team to achieve best practices and learned managing diverse team. Gained experience in managing business and dealing with head-office.</p>  
             </div>     
         </BounceInRight> 
     ) 
