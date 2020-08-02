@@ -60,7 +60,7 @@ class ContactForm extends React.Component{
 
     handleSubmit = req => {
         const params = req
-        const url = "http://poll-to-pass-api.herokuapp.com/email"
+        const url = "https://poll-to-pass-api.herokuapp.com/email"
 
         Axios.post(url, params).then(res =>{
             this.setState({...this.state, isLoading:false, emailSent:true})
