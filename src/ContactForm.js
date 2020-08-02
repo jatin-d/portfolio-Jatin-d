@@ -8,6 +8,8 @@ import FadeIn from "react-fade-in";
 import Lottie from "react-lottie";
 import * as progressLogo from "./progress.json"
 import * as success from "./success.json";
+import * as mailError from "./mail-error.json"
+import Axios from 'axios'
 
 
 const BounceInLeft = styled.div`animation: 2s ${keyframes`${bounceInLeft}`}`
@@ -30,6 +32,15 @@ const defaultOptions2 = {
     }
 };
 
+const defaultOptions3 = {
+    loop: false,
+    autoplay: true,
+    animationData: mailError.default,
+    rendererSettings: {
+       preserveAspectRatio: "xMidYMid slice"
+    }
+};
+
 class ContactForm extends React.Component{
 
     state = {
@@ -37,7 +48,8 @@ class ContactForm extends React.Component{
         email: '',
         multiline: '',
         formSubmitted: false,
-        isLoading: false
+        isLoading: false,
+        emailSent: null,
     }
 
     handleChange = e => {
@@ -47,15 +59,13 @@ class ContactForm extends React.Component{
     }
 
     handleSubmit = req => {
-        const template = process.env.REACT_APP_PCF
-        const userId = process.env.REACT_APP_UID
-        // const userId = '1234'
         const params = req
-        
-        window.emailjs.send('default_service', template, params, userId).then(res => {
-            this.setState({...this.state, isLoading:false})
-        }).catch(e => {
-            this.setState({...this.state, isLoading:false})
+        const url = "http://poll-to-pass-api.herokuapp.com/email"
+
+        Axios.post(url, params).then(res =>{
+            this.setState({...this.state, isLoading:false, emailSent:true})
+        }).catch(error => {
+            this.setState({...this.state, isLoading:false, emailSent:false}) 
         })
     }
 
@@ -75,6 +85,9 @@ class ContactForm extends React.Component{
 
         this.handleCraftReq(req)
     }
+
+   
+
 
     render() {
         return (
@@ -122,17 +135,23 @@ class ContactForm extends React.Component{
                 <div className='contact-wrapper'>
                 {this.state.formSubmitted ? (
                 <FadeIn>
-                    <div class="mailer-anim-container">
+                    <div className="mailer-anim-container">
                     {this.state.isLoading ? (
                         <div className="anim-sending-wrapper">
                             <h6>Sending</h6>
                             <Lottie options={defaultOptions} height={200} width={200} /> 
                         </div>
-                    ) : (
+                    ) : this.state.emailSent ? (
                         <div className="anim-sent-wrapper">
                             <h6>Sent successfully</h6>
                             <Lottie options={defaultOptions2} height={200} width={200} />
                             <h6>Thank you..!</h6>
+                        </div>
+                    ) : (
+                        <div className="anim-error-wrapper">
+                            <h6>Sorry could not send your e-mail</h6>
+                            <Lottie options={defaultOptions3} height={200} width={200} />
+                            <h6>Please reach me on <a href="mailto:jatin.d@outlook.com.au">email</a></h6>
                         </div>
                     )}
                     </div>
@@ -165,8 +184,6 @@ class ContactForm extends React.Component{
                             value={this.state.multiline}
                             onChange={this.handleChange}
                         />
-                        <div class="g-recaptcha" data-sitekey="6LcIZ7gZAAAAANfa0d2ofx-y-VLD_8rPwG869EfP"></div>
-                        <br/>
                         <button className='contactForm-input contactForm-submit-button' type="submit">Send</button>
                     </form>
                     )}
