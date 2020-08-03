@@ -26,9 +26,20 @@
     width: fit-content;
 }
 .education-title-container{
-    padding-top: 20px;
+    padding-top: 20px; 
     text-align: left;
- 
+    padding: 20px;
+    
+}
+.education-select-button{
+    padding: 0;
+    border: none;
+    background: none;
+    font-family: inherit;
+    margin: 5px;
+    background:  rgba(254, 177, 82, 0.7);
+    box-shadow: 2px 2px 2px rgb(125, 125, 125);
+    border-radius: 7px;
 }
 .education-title-text{
     margin: 0;
@@ -47,18 +58,13 @@
     font-size: 20px;
 }
 
-
-
-
-.education-select-button{
-    margin: 0;
-    padding: 0;
-    border: none;
-    background: none;
-    font-family: inherit;
+.education-select-button:hover{
+    background:  rgba(192, 192, 192, 0.7);
 }
 .education-select-button:focus{
     outline: none;
+    box-shadow: none;
+    background:  rgba(192, 192, 192, 0.7);
 }
 
 

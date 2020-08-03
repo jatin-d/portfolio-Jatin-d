@@ -7,6 +7,7 @@ import EduGA from './EduComponents/EduGA'
 import EduGU from './EduComponents/EduGU'
 import EduUD from './EduComponents/EduUD'
 
+
 const BounceInLeft = styled.div`animation: ${props => props.delay}s ${keyframes`${bounceInLeft}`}`
 const BounceInRight = styled.div`animation: ${props => props.delay}s ${keyframes`${bounceInRight}`}`
 
@@ -20,7 +21,6 @@ class Education extends React.Component {
         this.setState({
             section: [exp]
         })
-        console.log(this.state)
     }
 
     render = () => {

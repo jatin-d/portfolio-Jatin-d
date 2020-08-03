@@ -6,9 +6,13 @@ import {bounceInRight} from 'react-animations'
 import ExpGA from './ExpComponents/ExpGA';
 import ExpSE from './ExpComponents/ExpSE';
 import ExpLT from './ExpComponents/ExpLT';
+import ExpGEN from './ExpComponents/ExpGEN';
+
+
 
 const BounceInLeft = styled.div`animation: ${props => props.delay}s ${keyframes`${bounceInLeft}`}`
 const BounceInRight = styled.div`animation: ${props => props.delay}s ${keyframes`${bounceInRight}`}`
+
 
 
 class Experience extends React.Component {
@@ -19,11 +23,9 @@ class Experience extends React.Component {
         this.setState({
             section: [exp]
         })
-        console.log(this.state)
     }
     
     render = () => {
-        console.log(this.state)
         return(
             <div className="experience-container">
                 <div className="experience-text-left-container">
@@ -54,26 +56,32 @@ class Experience extends React.Component {
                         </div>
                     </BounceInLeft>
                 </div>
-                <BounceInRight delay={2}>
                     {this.state.section[0] === "ga"? (
-                        <div className="experience-description-right-wrapper"> 
-                            <ExpGA />
-                        </div>  
-                        ):this.state.section[0] === "se"? (
-                        <div className="experience-description-right-wrapper"> 
-                            <ExpSE />
-                        </div> 
-                        ):this.state.section[0] === "lt"?(
-                        <div className="experience-description-right-wrapper"> 
-                            <ExpLT />
-                        </div> 
-                        ):(
+                        <BounceInRight delay={2}>
                             <div className="experience-description-right-wrapper"> 
-                            <p>Error</p>
-                        </div> 
-                        )
-                    }             
-                </BounceInRight> 
+                            <ExpGA />
+                            </div>
+                        </BounceInRight> 
+                        ):this.state.section[0] === "se"? (
+                        <BounceInRight delay={2}>
+                            <div className="experience-description-right-wrapper"> 
+                            <ExpSE />
+                            </div>
+                        </BounceInRight>
+                        ):this.state.section[0] === "lt"?(
+                        <BounceInRight delay={2}>
+                            <div className="experience-description-right-wrapper"> 
+                            <ExpLT />
+                            </div> 
+                        </BounceInRight>
+                        ):(
+                        <BounceInRight delay={2}>
+                            <div className="experience-description-right-wrapper"> 
+                            <ExpGEN />
+                            </div> 
+                        </BounceInRight> 
+                    )
+                }             
             </div>
         )
     }   

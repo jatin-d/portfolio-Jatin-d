@@ -51,7 +51,7 @@ function About(){
                             <FadeIn>
                                 <Flash className='intro-instruction'>
                                     <p className='intro-instruction-text'>Click below to know more</p>
-                                    <i className="fas fa-angle-down intro-arrow"></i>
+                                    <i class="far fa-arrow-alt-circle-down intro-arrow"></i>
                                 </Flash>
                             </FadeIn>  
                         </div>
