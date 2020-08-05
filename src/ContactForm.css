@@ -99,22 +99,8 @@
 }
 .contactForm-input-textArea{
     height: 100px;
-    /* justify-content: start;
-    align-items: flex-start; */
-}
-.g-recaptcha{
-    margin: 10px;
 }
 
-
-/* .contact-wrapper{
-    position: relative;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto; 
-} */
 .mailer-anim-container{
     font-size: 40px;
     width: 100%;
@@ -138,6 +124,7 @@
         padding: 20px;
     }
     .contactForm-heading{
+        margin-top: 50px;
         font-size: 30px;
         padding-bottom: 5px;
     }

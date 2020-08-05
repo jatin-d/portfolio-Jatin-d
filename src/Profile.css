@@ -3,10 +3,10 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 40px;
 }
+
 .profile-section-container{
     display: flex;
     flex-flow: column;
-    /* align-items: left; */
     justify-content: center;
     width: 50vw;
     height: 100vh;
@@ -38,6 +38,9 @@
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.profile-links:hover{
+    color: rgba(254, 177, 82, 0.9);
+}
 .profile-skills-heading{
     margin: 0;
     font-size: 30px;
@@ -57,11 +60,10 @@
     text-align: center;
     margin: 3px;
     padding: 10px;
-    background-color: rgb(236, 234, 234);
+    border-left: 0.5px solid rgba(254, 177, 82, 0.9);
+    border-bottom: 0.5px solid rgba(254, 177, 82, 0.9);
+    /* background-color: rgb(236, 234, 234); */
     border-radius: 3px;
-}
-.profile-skills-list-items:hover{
-    background-color: rgba(254, 177, 82, 0.9);
 }
 .profile-skills-icons-wrapper{
     display: flex;

@@ -5,8 +5,6 @@ import Header from "./Header"
 import About from "./About"
 import Profile from "./Profile"
 import Portfolio from "./Portfolio"
-// import Play from "./Play"
-// import Contact from "./Contact"
 import Footer from "./Footer"
 import Experience from "./Experience"
 import Education from "./Education"
@@ -15,11 +13,8 @@ import {
   BrowserRouter,
   Switch,
   Route,
-  // Redirect,
 } from 'react-router-dom'
 import ContactForm from './ContactForm'
-
-
 
 class App extends React.Component{
   state = {
@@ -27,7 +22,7 @@ class App extends React.Component{
   }
   render(){
     return (
-      <main className="about-text">
+      <main className="main-application-wrapper">
         <BrowserRouter>
             <Header />
             <Switch>
@@ -52,10 +47,6 @@ class App extends React.Component{
               <Route path="/:target">
                 <About />
               </Route>
-              {/* <Route path="/play">
-                <Play />
-              </Route> */}
-              
               <Route path="/">
                 <About />
               </Route>
@@ -65,6 +56,5 @@ class App extends React.Component{
       </main>
     )
   }
-  
 }
 export default App

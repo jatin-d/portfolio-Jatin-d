@@ -31,21 +31,18 @@ export default function Profile(props) {
                             <p className="profile-skills-list-items">Node.js</p>
                             <p className="profile-skills-list-items">jQuery</p>
                             <p className="profile-skills-list-items">JavaScript</p>
-                            <p className="profile-skills-list-items">HTML5</p>
-                            <p className="profile-skills-list-items">CSS3</p>
+                            <p className="profile-skills-list-items">HTML5/CSS3</p>
                         </div>
                         <div>
                             <p className="profile-skills-list-items">Ruby</p>
                             <p className="profile-skills-list-items">Sinatra</p>
                             <p className="profile-skills-list-items">PostgreSQL</p>
                             <p className="profile-skills-list-items">Underscore.js</p>
-                            <p className="profile-skills-list-items">Bootstrap</p>
                             <p className="profile-skills-list-items">Postman</p>
                         </div>
                         <div>
                             <p className="profile-skills-list-items">Restful WS</p>
                             <p className="profile-skills-list-items">AWS</p>
-                            <p className="profile-skills-list-items">GraphQL</p>
                             <p className="profile-skills-list-items">VS Code</p>
                             <p className="profile-skills-list-items">GitHub</p>
                             <p className="profile-skills-list-items">Heroku</p>
@@ -127,7 +124,6 @@ export default function Profile(props) {
                 </BounceInRight>
                 </div>
             </div>
-            <div className="profile-background"></div>
         </div>  
     ) 
 }

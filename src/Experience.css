@@ -1,11 +1,14 @@
 *{
     box-sizing: border-box;
 }
-.experience-container{
+.experience-web-view-wrapper{
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+}
+.experience-mobile-view-wrapper{
+    display: none;
 }
 .experience-text-left-container{
     width: 100%;
@@ -18,15 +21,16 @@
     font-size: 40px;
     padding: 20px;
 }
+.experience-instruction-mobile-view{
+    display: none;
+}
 .experience-title-wrapper{
     padding: 20px;  
     display: flex;
     flex-flow: column;
-    align-items: left;
     width: fit-content;
 }
 .experience-title-container{
-    padding-top: 20px; 
     text-align: left;
     padding: 20px;
 }
@@ -40,7 +44,17 @@
     box-shadow: 2px 2px 2px rgb(125, 125, 125);
     border-radius: 7px;
 }
-
+.experience-title-text{
+    margin: 0;
+    padding: 10px;
+    font-size: 15px;
+    color: rgb(73, 73, 73);
+}
+.experience-sub-heading{
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+}
 .experience-select-button:hover{
     background:  rgba(192, 192, 192, 0.7);
 }
@@ -48,18 +62,6 @@
     outline: none;
     box-shadow: none;
     background:  rgba(192, 192, 192, 0.7);
-}
-.experience-title-text{
-    margin: 0;
-    padding-top: 20px;
-    font-size: 15px;
-    color: rgb(73, 73, 73);
-}
-
-.experience-sub-heading{
-    margin: 0;
-    padding-top: 20px;
-    font-size: 20px;
 }
 
 .experience-description-right-wrapper{
@@ -72,24 +74,44 @@
 
 
 @media (max-width:768px){
-    .experience-container{
-        padding-top: 30px;
-        grid-template-columns: none;
+    .experience-web-view-wrapper{
+        display: none;
+    }
+    .experience-mobile-view-wrapper{
+        height: 100vh;
+        display: grid;
         grid-template-rows: 1fr 1fr;
+        align-items: center;
     }
     .experience-heading{
         padding: 0;
-        padding-top: 30px;
+        margin-top: 60px;
+        font-size: 30px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-bottom: 10px;
     }
-    .experience-text-left-container{
-        margin-left: 20px;
-    } 
-    .experience-description-right-wrapper{
-        margin-left: 10px;
-        margin-right: 10px;
+    .experience-instruction-mobile-view{
+        display: flex;
+        padding-left: 10px;
+        padding-bottom: 10px;
     }
     .experience-title-wrapper{
-        padding: 0;  
+        padding: 0;
+        padding-left: 10px;  
     }
-}
+    .experience-title-container{
+        padding: 10px;
+    }
+    .experience-text-left-container{
+        margin: 0;   
+    } 
+    .experience-description-right-wrapper{
+        padding: 7px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}   
 

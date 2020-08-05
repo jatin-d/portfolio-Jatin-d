@@ -5,6 +5,14 @@
     display: flex;
     align-items: center;
 }
+.education-text{
+    margin: 0;
+    padding-top: 20px;
+    font-size: 18px;
+}
+/* .education-text em{
+    font-family: "Lucida Console"
+} */
 
 
 @media (max-width:768px){
