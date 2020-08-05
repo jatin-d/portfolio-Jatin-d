@@ -91,6 +91,9 @@
         padding-left: 10px;
         padding-bottom: 10px;
     }
+    .experience-sub-heading{
+        font-size: 18px;
+    }
     .experience-instruction-mobile-view{
         display: flex;
         padding-left: 10px;
@@ -105,7 +108,7 @@
     }
     .experience-text-left-container{
         margin: 0;   
-        margin-bottom: 80px;   
+        /* margin-bottom: 100px;    */
     } 
     .experience-description-right-wrapper{
         padding: 7px;
