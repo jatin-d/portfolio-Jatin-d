@@ -40,17 +40,17 @@ function About(){
                                     wrapper='b'
                                     steps ={[
                                         'A Full-Stack Web Developer', 1000,
+                                        'Who loves music', 1000,
                                         'A technology enthusiast', 1000,
-                                        'Who loves the game of Cricket', 1000,
-                                        'A husband and a father', 1000,
                                         'Who loves to travel', 1000,
+                                        'A husband and a father', 1000,
                                     ]}>    
                                 </Typical>
                             </FadeIn>
                             <FadeIn>
                                 <Flash className='intro-instruction'>
                                     <p className='intro-instruction-text'>Click below to know more</p>
-                                    <i class="far fa-arrow-alt-circle-down intro-arrow"></i>
+                                    <i className="far fa-arrow-alt-circle-down intro-arrow"></i>
                                 </Flash>
                             </FadeIn>  
                         </div>

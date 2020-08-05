@@ -21,7 +21,7 @@ export default function Profile(props) {
                 <div className="profile-section-container">
                     <h6 className="profile-heading">Profile and prowesses</h6>
                     <div className="profile-text"> 
-                        <p>An aspiring full-stack developer. Experienced working in project teams globally. A mechanical engineer. Believes in quality product delivered on time. Loves to create and make things work.</p> 
+                        <p>I am an aspiring full-stack developer who loves to create and make things work. A mechanical engineer who believes in quality products delivered on time. A people person who is experienced in working with project teams globally.</p> 
                     </div>
                    
                     <h6 className="profile-skills-heading">I can work with...</h6>

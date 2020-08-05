@@ -17,7 +17,7 @@ export default function Portfolio(){
                 <BounceInLeft className="portfolio-text-wrapper-bounce">
                     <div className="portfolio-text-wrapper">
                     <h6 className='portfolio-heading'>Check Out My Work</h6>
-                    <p className="portfolio-text">While learning development skills, I tried to capture every learning and attempted to craft them in form of a project. Following are my projects replicating my journey so far and going...</p> 
+                    <p className="portfolio-text">While learning development skills, I tried to implement every learning in form of a project. Following are my projects replicating my journey so far and going...</p> 
                 </div>
                 </BounceInLeft>
                 <BounceInRight className="portfolio-grid-bounce">

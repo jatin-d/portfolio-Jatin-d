@@ -58,7 +58,7 @@ class Experience extends React.Component {
                     <div className="experience-text-left-container">
                         <BounceInLeft delay={2}>
                             <Flash className='experience-instruction-mobile-view'>
-                                <p className='experience-instruction-text'><i class="far fa-arrow-alt-circle-down"></i> Click tabs to know more about my experience </p>
+                                <p className='experience-instruction-text'><i className="far fa-arrow-alt-circle-down"></i> Click tabs to know more about my experience </p>
                             </Flash> 
                             <div className="experience-title-wrapper">
                                 <button onClick={()=>this.renderSelection("ga")} className="experience-select-button">
@@ -92,7 +92,7 @@ class Experience extends React.Component {
                         <BounceInLeft delay={2}>
                             <h6 className="experience-heading">Experience</h6>
                             <Flash className='experience-instruction-mobile-view'>
-                                <p className='experience-instruction-text'><i class="far fa-arrow-alt-circle-down"></i> Click tabs to know more about my experience </p>
+                                <p className='experience-instruction-text'><i className="far fa-arrow-alt-circle-down"></i> Click tabs to know more about my experience </p>
                             </Flash> 
                             <div className="experience-title-wrapper">
                                 <button onClick={()=>this.renderSelection("ga")} className="experience-select-button">

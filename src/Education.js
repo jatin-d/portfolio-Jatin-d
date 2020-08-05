@@ -52,7 +52,7 @@ class Education extends React.Component {
                         </BounceInRight>
                         <BounceInLeft delay={2}>
                             <Flash className='education-instruction-mobile-view'>
-                                <p className='education-instruction-text'><i class="far fa-arrow-alt-circle-down"></i> Click tabs to know more about my education </p>
+                                <p className='education-instruction-text'><i className="far fa-arrow-alt-circle-down"></i> Click tabs to know more about my education </p>
                             </Flash>
                             <div className="education-title-wrapper">
                                 <button onClick={()=>this.renderSelection("ga")} className="education-select-button">
@@ -79,15 +79,13 @@ class Education extends React.Component {
                             </div>
                         </BounceInLeft>
                     </div>
-                     
-
                 </div>
                 <div className="education-web-view-wrapper">
                     <div className="education-text-left-container">
                         <BounceInLeft delay={2}>
                             <h6 className="education-heading">Education</h6>
                             <Flash className='education-instruction-mobile-view experience-text'>
-                                <p className='education-instruction-text'><i class="far fa-arrow-alt-circle-down"></i> Click tabs to know more about my education </p>
+                                <p className='education-instruction-text'><i className="far fa-arrow-alt-circle-down"></i> Click tabs to know more about my education </p>
                             </Flash>
                             <div className="education-title-wrapper">
                                 <button onClick={()=>this.renderSelection("ga")} className="education-select-button">

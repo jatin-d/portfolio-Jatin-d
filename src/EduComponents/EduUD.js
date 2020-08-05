@@ -10,7 +10,7 @@ export default function EduUD(props) {
         <BounceInRight className="education-description-wrapper" delay={2}>
             <div >
                 <p className='education-text'>I have always been excited to learn more about computers and how things work on it. Working as a Mechanical design engineering and exposure to design softwares always arouse a zeal to learn about software development.</p> 
-                <p className='education-text'>In year <em><b>2017</b></em>, I learned <em><b>HTML, CSS and JavaScript on SoloLearn</b></em>, just to expose my self to software development.</p>
+                <p className='education-text'>In year <em><b>2017</b></em>, I learned <em><b>HTML, CSS and JavaScript on SoloLearn</b></em>, to expose my self to the world of software development.</p>
                 <p className='education-text'>CSS and Web Page Layout excited me so I researched about leading design tools in the industry which led me to Figma and I completed <em><b>"Learn Figma - UI/UX Design Essential Training"</b></em> a 40+ hour course on <em><b>Udemy in 2018</b></em>.</p> 
                 <p className='education-text'><em><b>Learn Figma - UI/UX Design Essential Training included...</b></em></p> 
                 <p className='education-text'>Using panels in Figma such as Menu, Tools, Layers and Pages, Components, Team Library, Design, Prototype, Code etc.</p>

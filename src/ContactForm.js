@@ -96,7 +96,7 @@ class ContactForm extends React.Component{
                 <div className="contact-textContainer">
                     <h6 className='contactForm-heading'>Drop me a line</h6>
                     <p className='contactForm-text'>
-                        I am always excited to interact with people, know their story and tell them mine and make long-lasting connections. <em>Drop me few words..!</em>
+                        I am always excited to interact with people, know their story and share mine, to make long-lasting connections. <em>Drop me a few words..!</em>
                     </p>
                     <h6 className='contactForm-sub-heading'>Or find me on internet</h6>
                     <div className="contactForm-social">

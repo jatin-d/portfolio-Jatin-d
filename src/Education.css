@@ -89,6 +89,9 @@
         padding-left: 10px;
         padding-bottom: 10px;
     }
+    .education-sub-heading{
+        font-size: 18px;
+    }
     .education-instruction-mobile-view{
         display: flex;
         padding-left: 10px;
@@ -103,8 +106,7 @@
     }
     .education-text-left-container{
         margin: 0;   
-        margin-bottom: 100px;      
-    } 
+    }
     .education-description-right-wrapper{
         padding: 7px;
         margin-left: 10px;

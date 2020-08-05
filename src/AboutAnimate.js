@@ -30,8 +30,8 @@ class AboutAnimate extends React.Component{
     render(){
         return (
             <div onMouseMove={this.handleChang} className="AnimationContainer">
-                {this.state.dots.map(dot =>{
-                    return(<Dot />)
+                {this.state.dots.map((dot, index )=>{
+                    return(<Dot key={index} uniqId={index}/>)
                 })}
             </div> 
         )

@@ -2,14 +2,15 @@
     box-sizing: border-box;
 }
 .experience-description-wrapper{
-    /* height: 100vh; */
     display: flex;
-    /* grid-template-columns: 1fr 1fr; */
     align-items: center;
 }
 .experience-internal-link{
     display: inline;
-    font-size: 25px;
+    font-size: 20px;
+}
+.experience-internal-link:hover{
+    color: rgba(254, 177, 82, 0.9);
 }
 
 @media (max-width:768px){
