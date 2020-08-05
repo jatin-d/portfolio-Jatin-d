@@ -10,7 +10,6 @@ import {bounceInLeft} from 'react-animations'
 import Typical from 'react-typical'
 import { 
     Link,
-    // Redirect,
 } from 'react-router-dom'
 
 
@@ -58,7 +57,6 @@ function About(){
                     <div className="about-intro-navigation">
                         <Link className="router-link" to="/profile">{getLinkElement('Profile', 1.5)}</Link>
                         <Link className="router-link" to="/portfolio">{getLinkElement('Project portfolio', 2)}</Link>
-                        {/* <Link className="router-link" to="/play">{getLinkElement('Play while I play', 2.25)}</Link> */}
                         <Link className="router-link" to="/contact">{getLinkElement('Get in touch', 2.50)}</Link>
                     </div>
                 </div>
@@ -72,5 +70,4 @@ function About(){
         </div>
     )
 }
-
 export default About
