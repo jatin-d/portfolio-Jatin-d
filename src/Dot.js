@@ -3,14 +3,14 @@ import './Dot.css';
 
 export default function Dot(props) {
     const dotSize = `${Math.floor(Math.random()*2)}em`
-    const colors = ['#eb4034', '#d9bc1c', '#409111', '#34bf80', '#0fdbd5','#0f68db', '#544ac7', '#882fcc', '#d321d9', '#d11d7d', '#cc1830', '#360c12', '#160b30', '#370e40', '#62376b', '#235b6e', '#1fb52b', '#317036', '#a1c965', '#a67b26', '#a16020', 'white', 'silver']
+    const colors = ['#eb4034', 'none', '#d9bc1c', 'none', '#409111', 'none', '#34bf80', 'none', '#0fdbd5', 'none', '#0f68db', 'none', '#544ac7', 'none', '#882fcc', 'none', '#d321d9', 'none', '#d11d7d', 'none', '#cc1830', 'none', '#360c12', 'none',  '#160b30', 'none', '#370e40', '#62376b', 'none', '#235b6e', 'none', '#1fb52b', 'none', '#317036', '#a1c965', 'none', '#a67b26', 'none', '#a16020', 'none', 'white', 'silver', 'none']
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
     const dotProperties = { 
         position: 'relative',
         left: `${Math.floor(Math.random()*700)}px`,
-        top: `${Math.floor(Math.random()*10)}px`,
+        top: `${Math.floor(Math.random()*80)}px`,
         transition: 'all 3s ease-in-out',
-        // boxShadow: `1px 1px 3px ${randomColor}`,
+        border: `0.5px solid ${randomColor}`,
         height: `${dotSize}`,
         width: `${dotSize}`,
         backgroundColor: randomColor,

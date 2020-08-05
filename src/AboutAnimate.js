@@ -5,11 +5,7 @@ import Dot from './Dot';
 
 class AboutAnimate extends React.Component{
     state = {
-            content: '', 
-            left: 100,
-            top: 100,
-            dots: [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
-            dotSize: '0.5em'
+        dots: [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
     }
     componentDidMount() {
         this.intervalID = setInterval(
@@ -23,16 +19,10 @@ class AboutAnimate extends React.Component{
     handleChange = () => {
         if(this.state.dots.length < 1000){
             this.setState({
-            left: Math.floor(Math.random()*300),
-            top: Math.floor(Math.random()*200),
-            dotSize: `${Math.floor(Math.random()*3)}em`,
-            dots: [...this.state.dots, 1, 1, 1, 1]
+            dots: [...this.state.dots, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
         })
         } else {
             this.setState({
-                left: Math.floor(Math.random()*300),
-                top: Math.floor(Math.random()*200),
-                dotSize: `${Math.floor(Math.random()*3)}em`,
                 dots: [...this.state.dots]
             })
         }

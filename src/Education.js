@@ -57,21 +57,21 @@ class Education extends React.Component {
                             <div className="education-title-wrapper">
                                 <button onClick={()=>this.renderSelection("ga")} className="education-select-button">
                                     <div className="education-title-container">
-                                        <h6 className='education-sub-heading'>Software Engineering Immersive</h6>
+                                        <h6 className='education-sub-heading'>Software Engineering Immersive <i className="far fa-arrow-alt-circle-right"></i></h6>
                                         <p className='education-title-text'>General Assembly Melbourne</p> 
                                         <p className='education-title-text'>2020</p> 
                                     </div>
                                 </button>
                                 <button onClick={()=>this.renderSelection("ud")} className="education-select-button">
                                     <div className="education-title-container">
-                                        <h6 className='education-sub-heading'>Self Learning</h6>
+                                        <h6 className='education-sub-heading'>Self Learning <i className="far fa-arrow-alt-circle-right"></i></h6>
                                         <p className='education-title-text'>Udemy | SoloLearn | O'reilly Media</p> 
                                         <p className='education-title-text'>2017 - 2019</p> 
                                     </div>
                                 </button>
                                 <button onClick={()=>this.renderSelection("gu")} className="education-select-button">
                                     <div className="education-title-container">
-                                        <h6 className='education-sub-heading'>Bachelor Of Mechanical Engineering</h6>
+                                        <h6 className='education-sub-heading'>Bachelor Of Mechanical Engineering <i className="far fa-arrow-alt-circle-right"></i></h6>
                                         <p className='education-title-text'>Gujarat University</p> 
                                         <p className='education-title-text'>2006 - 2009</p> 
                                     </div>
@@ -92,21 +92,21 @@ class Education extends React.Component {
                             <div className="education-title-wrapper">
                                 <button onClick={()=>this.renderSelection("ga")} className="education-select-button">
                                 <div className="education-title-container">
-                                    <h6 className='education-sub-heading'>Software Engineering Immersive</h6>
+                                    <h6 className='education-sub-heading'>Software Engineering Immersive <i className="far fa-arrow-alt-circle-right"></i></h6>
                                     <p className='education-title-text'>General Assembly Melbourne</p> 
                                     <p className='education-title-text'>2020</p> 
                                 </div>
                                 </button>
                                 <button onClick={()=>this.renderSelection("ud")} className="education-select-button">
                                 <div className="education-title-container">
-                                    <h6 className='education-sub-heading'>Self Learning</h6>
+                                    <h6 className='education-sub-heading'>Self Learning <i className="far fa-arrow-alt-circle-right"></i></h6>
                                     <p className='education-title-text'>Udemy | SoloLearn | O'reilly Media</p> 
                                     <p className='education-title-text'>2017 - 2019</p> 
                                 </div>
                                 </button>
                                 <button onClick={()=>this.renderSelection("gu")} className="education-select-button">
                                 <div className="education-title-container">
-                                    <h6 className='education-sub-heading'>Bachelor Of Mechanical Engineering</h6>
+                                    <h6 className='education-sub-heading'>Bachelor Of Mechanical Engineering <i className="far fa-arrow-alt-circle-right"></i></h6>
                                     <p className='education-title-text'>Gujarat University</p> 
                                     <p className='education-title-text'>2006 - 2009</p> 
                                 </div>

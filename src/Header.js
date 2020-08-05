@@ -13,7 +13,7 @@ export default function Header() {
     }
     return (
         <header className="fixed-header">
-            <Link className="router-link" to="/"><h6 className='logo'>Jatin.D</h6></Link>
+            <Link className="router-link" to="/"><div className="log-wrapper"><h6 className='logo'>JD</h6></div></Link>
             <div className="menu-wrap">
                 <input id="togglerCheckbox" type="checkbox" className='toggler' ref={checkBoxRef}/>
                 <div className="hamburger"><div></div></div>
