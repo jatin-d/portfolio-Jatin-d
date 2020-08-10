@@ -16,7 +16,7 @@ export default function ExpGA(props) {
             <div >
                 <p className="experience-text">In the second inning of my career…</p>
                 <p className="experience-text">to fulfil my desire to create and colour,</p> 
-                <p className="experience-text">to satisfy my unflinching urge,</p><p className="experience-text">to solve problems, and learn new things,</p>
+                <p className="experience-text">to satisfy my unflinching urge to solve problems,</p><p className="experience-text">and learn new things,</p>
                 <p className="experience-text">to comply with my motto "I can’t afford to be outdated",</p> 
                 <p className="experience-text">to be a part of a team that celebrates even the tiniest success and faces the darkest hours of challenges, be it chasing a narrow deadline or implementing "first of its kind" technologies,</p>
                 <p className="experience-text">I chose to be a software engineer and joined <em><b>Software Engineering Immersive</b></em> course at <em><b>General Assembly - Melbourne</b></em></p>

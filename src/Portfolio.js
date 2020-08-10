@@ -36,7 +36,8 @@ export default function Portfolio(){
                         <div className="portfolio-item-overlay">
                             <div className='portfolio-item-overlay-content-wrapper'>
                                 <h6 className="portfolio-item-heading">Poll To Pass</h6>
-                                <p className="portfolio-item-text">A web-based platform to post polls. Developed using HTML5, and CSS for front-end and Ruby with Sinatra for the back-end.</p>
+                                <p className="portfolio-item-text-poll">A web-app to post and take polls. Developed using HTML5, CSS, Ruby and Sinatra.</p>
+                                <p className="portfolio-item-text-uidpw">username: visitor@mail.com <br/> password: visit999 </p>
                                 <a className='portfolio-demo-link' href="https://poll-to-pass-api.herokuapp.com/">DEMO</a>
                             </div>  
                         </div>
