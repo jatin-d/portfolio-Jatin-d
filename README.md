@@ -1,7 +1,7 @@
 Welcome to Jatin's web portfolio!
 ===================
 
-**jatindhandhalya.com** is my portfolio website created using create react app. Portfolio website is intend to provide visitors information about my self including my personal and professional journey so far. Intention of this website is also to demonstrate my react web development capabilities. 
+ [**jatindhandhalya.com**](https://jatindhandhalya.com/) is my portfolio website created using create react app. Portfolio website is intend to provide visitors information about my self including my personal and professional journey so far. Intention of this website is also to demonstrate my react web development capabilities. 
 
 ----------
 
