@@ -55,4 +55,5 @@ The site is designed and developed using React. Development features and highlig
 > - To secure the mailer from spams, a limit of 10 emails from the same IP address is implemented in server side code.
 > - An unique animation is implemented to let users know status of their mails being sent.
 > - A fixed header and footer covers top and bottom respectively, Footer included site credentials and social media links.
+> - A resume download link is provided in Contact page as well as in header for those who want to know details of my curriculum vitae.
 
