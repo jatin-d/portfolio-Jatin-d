@@ -45,13 +45,15 @@ The site is designed and developed using React. Development features and highlig
 > - The site is responsive for desktops and screen size below 768px. I intend to make it more responsive for different screen size and different desktop resolutions in near future.
 > - Links on the landing pages provided with a hover effect using CSS and the title/logo is provided with an unique hover effect using CSS.
 > - Link tabs on Experience and Education sections (routing through profile page) are created as react Links and rendered using react state. A different section is rendered while different tab is clicked and react state is updated.
-> - Portfolio grid is created using flexible CSS grid which is flexible for adding or removing projects on later date.
+> - Portfolio layout is created using CSS grid which is flexible for accommodating changes in projects.
 > - Overlay for each portfolio item is created using CSS.
 > - Contact form uses back-end server to send email to my inbox. The back-end code is hosted on Heroku. email is sent using mailJS library.
-> - To secure the mailer from spams, a limit of 10 emails from the same IP address is implemented in server side code.
+> - The mailer is designed to be secured from spams, a code is implemented on server side code to achieve this.
 > - An unique animation is implemented to let users know status of their mails being sent.
 > - A fixed header and footer covers top and bottom respectively, Footer included site credentials and social media links.
 > - A resume download link is provided in Contact page as well as in header for those who want to know details of my curriculum vitae.
+> - THe website is deployed on AWS using S3, CloudFront and Route53.
+> - Continuous integration and continuous deployment (CI/CD) is implemented using Buddy pipeline and GitHub.
 
 Please visit my website by clicking
 -------------
