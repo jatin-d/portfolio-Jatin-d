@@ -19,38 +19,40 @@ As you can see in the image above, landing page also includes links to major con
 
 Profile Page
 -------------
-
 Profile page presents general summery about myself and link to my Experience and Education sections. On the right hand side, I have created a CSS grid of icons of the skills I have. I intend to improvise this grid in some kind of animation in future. 
 
 ![enter image description here](https://i.imgur.com/oZSJNCd.png)
 
 Portfolio Page
 -------------
+Portfolio page shows a grid view of my portfolio projects that I did during my course at General assembly. An overlay is created for each portfolio items that shows brief introduction of the project and a link to DEMO page.
 
-
-
-
-
+![enter image description here](https://i.imgur.com/cl2JVZi.png)
 
 Contact Page
 -------------
+Contact page is my most favorite page of the site. Landing on contact page shows user a brief message along with a link to my resume and to my social media pages. On the right side, I have created a contact form using mail JS. User can send me a mail using this form. 
 
-
-
+![enter image description here](https://i.imgur.com/6PG4h4n.png)
 
 ----------
 
 Development
 -------------
-The game is developed using front-end programming languages including HTML5, CSS, and JavaScript. HTML is used to render the game on a browser. Game styles are created using CSS. All functionality is created using JavaScript.
+The site is designed and developed using React. Development features and highlights are listed below.
 
 > **Development Features:**
 
-> - To make the grid clickable, a unique class was assigned to each grid. The box containing the game interface was further divided into a 3x3 grid to create 9 boxes assigned with a unique class.
-> - Necessary styling was created to highlight not yet played boxes as well as played boxes.
-> - Created a  display message informing the winner.
-> - It has a reset button to <i class="icon-refresh"></i> **reset the game** within the current tournament and a button to <i class="icon-refresh"></i> **reset scores** after the tournament.
-> - The code tracks any clicks that happen on the cells. It checks if a valid move has been made.
-> - It makes sure that nothing happens if an already played cell has been clicked. It updates the game state and validates the game.
-> - After validation, if we have a winner, it stops the game. The code reflects the updates made on the UI and resets based on user action.
+> - This site is a static single page application routing to different pages using react router.
+> - Animation on landing page is created using react-state.
+> - To support other animations, I have used react modules/libraries such as react-animations, react-custom-scrollbars, react-lottie, react-responsive-carousel, react-typical, and styled-components.
+> - The site is responsive for desktops and screen size below 768px. I intend to make it more responsive for different screen size and different desktop resolutions in near future.
+> - Links on the landing pages provided with a hover effect using CSS and the title/logo is provided with an unique hover effect using CSS.
+> - Link tabs on Experience and Education sections (routing through profile page) are created as react Links and rendered using react state. A different section is rendered while different tab is clicked and react state is updated.
+> - Portfolio grid is created using flexible CSS grid which is flexible for adding or removing projects on later date.
+> - Overlay for each portfolio item is created using CSS.
+> - Contact form uses back-end server to send email to my inbox. The back-end code is hosted on Heroku. email is sent using mailJS library.
+> - To secure the mailer from spams, a limit of 10 emails from the same IP address is implemented in server side code.
+> - An unique animation is implemented to let users know status of their mails being sent.
+> - A fixed header and footer covers top and bottom respectively, Footer included site credentials and social media links.
 
