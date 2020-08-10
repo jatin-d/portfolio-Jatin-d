@@ -1,7 +1,7 @@
 .profile-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 40px;
+    grid-gap: 10px;
 }
 
 .profile-section-container{
@@ -43,11 +43,11 @@
 }
 .profile-skills-heading{
     margin: 0;
-    font-size: 30px;
+    margin-left: 30px;
+    font-size: 20px;
     text-align: left;
-    margin-left: 150px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 .profile-skills-list{
     padding-top: 20px;
@@ -58,12 +58,10 @@
 }
 .profile-skills-list-items{
     text-align: center;
-    margin: 3px;
-    padding: 10px;
-    border-left: 0.5px solid rgba(254, 177, 82, 0.9);
-    border-bottom: 0.5px solid rgba(254, 177, 82, 0.9);
-    /* background-color: rgb(236, 234, 234); */
-    border-radius: 3px;
+    margin: 0;
+    margin-top: 5px;
+    font-size: 12px;
+    color: rgba(110, 110, 110, 0.9);
 }
 .profile-skills-icons-wrapper{
     display: flex;
