@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
 }
-@media screen and (max-width: 1900px){
+@media only screen and (max-width: 1900px){
     .logo{
         font-family: 'Kanit', sans-serif;
         margin: 0;

@@ -1,4 +1,4 @@
-@media screen and (max-width: 1900px){
+@media only screen and (max-width: 1900px){
     .portfolio-wrapper{
         display: grid;
         grid-template-columns: 1fr 1fr;
