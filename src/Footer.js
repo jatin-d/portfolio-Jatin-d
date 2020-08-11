@@ -4,7 +4,7 @@ import './Footer.css'
 export default function Footer(){
     return(
         <footer className="footer-wrapper">
-            <section className="footer-credentials"><p>&reg; Designed & Created by Jatin D.</p></section>
+            <section className="footer-credentials"><p>&#169; Designed & Created by Jatin D.</p></section>
             <nav className="footer-nav">
                 <a 
                     style={{display: "table-cell"}} 
@@ -27,9 +27,6 @@ export default function Footer(){
                     target='_blank'
                     className='footer-link'
                 ><i className="fab fa-medium"></i></a>
-                {/* <a className='footer-link' href="#linkedId"><i className="fab fa-linkedin"></i></a>
-                <a className='footer-link' href="#GitHub"><i className="fab fa-github-square"></i></a>
-                <a className='footer-link' href="#medium"><i className="fab fa-medium"></i></a> */}
             </nav>  
         </footer>
     )
